@@ -1,0 +1,16 @@
+.albumTile{
+    width: 300px;
+    height: 400px;
+}
+
+.tiles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}

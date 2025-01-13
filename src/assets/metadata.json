@@ -1,0 +1,61 @@
+{
+  "albums": [
+    {
+      "title": "Our Future",
+      "date": "2013-05-17T04:00:00.000Z",
+      "folder" : "our-future",
+      "subtitle": "Departure: Southern Station.",
+      "imageFormat": "png"
+    },
+    {
+      "title": "Nceput",
+      "date": "2018-09-28T04:00:00.000Z",
+      "folder" : "nceput",
+      "subtitle": "Citrus × limon.",
+      "imageFormat": "jpg"
+    },
+    {
+      "title": "Voies Sporen",
+      "date": "2019-05-18T04:00:00.000Z",
+      "folder" : "voies-sporen",
+      "subtitle": "The artificial is more authentic than the real could ever be.",
+      "imageFormat": "png"
+    },
+    {
+      "title": "(antiphony)",
+      "date": "2020-04-25T04:00:00.000Z",
+      "folder" : "antiphony",
+      "subtitle": "it's not the time for symphonies.",
+      "imageFormat": "jpg"
+    },
+    {
+      "title": "Wen Kintry",
+      "date": "2021-03-19T04:00:00.000Z",
+      "folder" : "wen-kintry",
+      "subtitle": "Where are the two lost voices, now the night is about to pass.",
+      "imageFormat": "png"
+    },
+    {
+      "title": "Essentia: As The Music Resounds",
+      "date": "2022-02-22T05:00:00.000Z",
+      "folder" : "essentia",
+      "subtitle": "Că frumos mai cântă muzica.",
+      "imageFormat": "png"
+    },
+    {
+      "title": "K.S.L.L.K.",
+      "date": "2022-10-05T04:00:00.000Z",
+      "folder" : "ksllk",
+      "subtitle": "Ode to Lilith.",
+      "imageFormat": "jpg"
+    },
+    {
+      "title": "No Sound Is Too Trivial To Ignore",
+      "date": "2023-11-22T05:00:00.000Z",
+      "folder" : "no-sound",
+      "subtitle": "Future breeze.",
+      "imageFormat": "png"
+    }
+
+  ]
+}
