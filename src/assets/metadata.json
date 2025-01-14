@@ -26,7 +26,8 @@
       "date": "2020-04-25T04:00:00.000Z",
       "folder" : "antiphony",
       "subtitle": "it's not the time for symphonies.",
-      "imageFormat": "jpg"
+      "imageFormat": "jpg",
+      "titleHidden": true
     },
     {
       "title": "Wen Kintry",

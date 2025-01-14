@@ -39,3 +39,12 @@
 .coverArt{
     box-shadow: rgba(240, 46, 170, 0.4) 0 0 50px;
 }
+
+.albumName[data-titleHidden="true"]{
+    color: rgba(255,255,255,0);
+}
+
+.albumName[data-titleHidden="true"]:focus,
+.albumName[data-titleHidden="true"]::selection{
+    color: white;
+}

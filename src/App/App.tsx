@@ -8,7 +8,8 @@ interface Album{
     date: string
     folder : string
     subtitle : string
-    imageFormat : string
+    imageFormat : string,
+    titleHidden: boolean | undefined
 }
 
 interface Metadata{
@@ -40,7 +41,8 @@ function App() {
                         name={album.title}
                         folder={album.folder}
                         subname={album.subtitle}
-                        imageFormat={album.imageFormat}/>
+                        imageFormat={album.imageFormat}
+                        titleHidden={album.titleHidden}/>
                 ))}
         </div>
     </>
