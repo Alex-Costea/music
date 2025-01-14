@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -12,7 +11,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #11010b;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -40,6 +39,8 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin: 0;
+  padding: 0 0 1em;
 }
 
 button {
@@ -72,4 +73,9 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.artist{
+  font-size: 4em;
+  padding: 0.2em 0 0.6em;
 }

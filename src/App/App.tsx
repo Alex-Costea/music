@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-      <h1>Alcostar Music</h1>
+      <h1 className="artist">alco★</h1>
         <div className="tiles">
             {metadata?.albums && Array.from(metadata?.albums, (album) =>
                 (
