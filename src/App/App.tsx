@@ -39,6 +39,7 @@ function App() {
                 (
                     <AlbumTile
                         name={album.title}
+                        key={album.folder}
                         folder={album.folder}
                         subname={album.subtitle}
                         imageFormat={album.imageFormat}
