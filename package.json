@@ -2,7 +2,7 @@
   "name": "alcostar-music",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://alex.costea.in/music/",
+  "homepage": "https://music.costea.in",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
