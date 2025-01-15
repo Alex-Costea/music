@@ -5,17 +5,18 @@ interface AlbumTileProps {
     folder: string,
     subname: string,
     imageFormat: string,
-    titleHidden?: boolean | undefined
+    titleHidden?: boolean | undefined,
+    cdnLink : string | undefined
 }
 
-function AlbumTile({name, folder, subname, imageFormat, titleHidden}: AlbumTileProps) {
+function AlbumTile({name, folder, subname, imageFormat, titleHidden, cdnLink}: AlbumTileProps) {
 
     return (
         <div className={"albumTile"}>
             <img
                 className="coverArt"
                 alt={name}
-                src={`src/assets/mp3/${folder}/cover.${imageFormat}`} />
+                src={`${cdnLink}/mp3/${folder}/cover.${imageFormat}`} />
             <h2 className="albumName" data-title-hidden={titleHidden}>{name}</h2>
             <h3 className="subtitle">{subname}</h3>
         </div>
