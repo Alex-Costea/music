@@ -22,7 +22,7 @@ function App() {
     const [cdnLink, setCdnLink] = useState<string>()
 
     useEffect(() => {
-        fetch("public/metadata.json").then(res => res.json()).then( (res: Metadata) =>
+        fetch("metadata.json").then(res => res.json()).then( (res: Metadata) =>
         {
             res.albums = res.albums.sort((a, b) => {
                 const dateA = Date.parse(a.date)
