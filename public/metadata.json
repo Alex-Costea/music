@@ -3,60 +3,52 @@
   "albums": [
     {
       "title": "Our Future",
-      "date": "2013-05-17T04:00:00.000Z",
+      "date": "2013-05-17",
       "folder" : "our-future",
-      "subtitle": "Departure: Southern Station.",
-      "imageFormat": "png"
+      "subtitle": "Departure: Southern Station."
     },
     {
       "title": "Nceput",
-      "date": "2018-09-28T04:00:00.000Z",
+      "date": "2018-09-28",
       "folder" : "nceput",
-      "subtitle": "Citrus × limon.",
-      "imageFormat": "jpg"
+      "subtitle": "Citrus × limon."
     },
     {
       "title": "Voies Sporen",
-      "date": "2019-05-18T04:00:00.000Z",
+      "date": "2019-05-18",
       "folder" : "voies-sporen",
-      "subtitle": "The artificial is more authentic than the real could ever be.",
-      "imageFormat": "png"
+      "subtitle": "The artificial is more authentic than the real could ever be."
     },
     {
       "title": "(antiphony)",
-      "date": "2020-04-25T04:00:00.000Z",
+      "date": "2020-04-25",
       "folder" : "antiphony",
       "subtitle": "it's not the time for symphonies.",
-      "imageFormat": "jpg",
       "titleHidden": true
     },
     {
       "title": "Wen Kintry",
-      "date": "2021-03-19T04:00:00.000Z",
+      "date": "2021-03-19",
       "folder" : "wen-kintry",
-      "subtitle": "Where are the two lost voices, now the night is about to pass.",
-      "imageFormat": "png"
+      "subtitle": "Where are the two lost voices, now the night is about to pass."
     },
     {
       "title": "Essentia: As The Music Resounds",
-      "date": "2022-02-22T05:00:00.000Z",
+      "date": "2022-02-22",
       "folder" : "essentia",
-      "subtitle": "Că frumos mai cântă muzica.",
-      "imageFormat": "png"
+      "subtitle": "Că frumos mai cântă muzica."
     },
     {
       "title": "K.S.L.L.K.",
-      "date": "2022-10-05T04:00:00.000Z",
+      "date": "2022-10-05",
       "folder" : "ksllk",
-      "subtitle": "Ode to Lilith.",
-      "imageFormat": "jpg"
+      "subtitle": "Ode to Lilith."
     },
     {
       "title": "No Sound Is Too Trivial To Ignore",
-      "date": "2023-11-22T05:00:00.000Z",
+      "date": "2023-11-22",
       "folder" : "no-sound",
-      "subtitle": "Future breeze.",
-      "imageFormat": "png"
+      "subtitle": "Future breeze."
     }
 
   ]

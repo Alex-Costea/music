@@ -8,7 +8,6 @@ interface Album{
     date: string
     folder : string
     subtitle : string
-    imageFormat : string,
     titleHidden: boolean | undefined
 }
 
@@ -45,7 +44,6 @@ function App() {
                         key={album.folder}
                         folder={album.folder}
                         subname={album.subtitle}
-                        imageFormat={album.imageFormat}
                         titleHidden={album.titleHidden}
                         cdnLink={cdnLink}/>
                 ))}
