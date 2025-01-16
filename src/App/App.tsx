@@ -13,12 +13,12 @@ interface Album{
 
 interface Metadata{
     albums : Album[],
-    cdnLink : string
+    cdnLink : string,
+    artistName : string
 }
 
 function App() {
     const [metadata, setMetadata] = useState<Metadata>()
-    const [cdnLink, setCdnLink] = useState<string>()
 
     useEffect(() => {
         fetch("metadata.json").then(res => res.json()).then( (res: Metadata) =>
@@ -29,13 +29,13 @@ function App() {
                 return dateB - dateA;
             })
             setMetadata(res)
-            setCdnLink(res.cdnLink)
+            document.title = `${res.artistName}`
         })
     }, [])
 
   return (
     <>
-      <h1 className="artist">alco★</h1>
+      <h1 className="artist">{metadata?.artistName}</h1>
         <div className="tiles">
             {metadata?.albums && Array.from(metadata?.albums, (album) =>
                 (
@@ -45,7 +45,7 @@ function App() {
                         folder={album.folder}
                         subname={album.subtitle}
                         titleHidden={album.titleHidden}
-                        cdnLink={cdnLink}/>
+                        cdnLink={metadata.cdnLink}/>
                 ))}
         </div>
     </>
