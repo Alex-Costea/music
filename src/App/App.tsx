@@ -5,6 +5,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "../Home/Home.tsx";
 import Album from "../Album/Album.tsx";
 import Artist from "../Artist/Artist.tsx";
+import { MetadataContext } from '../MetadataContext/MetadataContext.tsx';
 
 export interface Album{
     title : string
@@ -24,7 +25,7 @@ function App() {
     const [metadata, setMetadata] = useState<Metadata>()
 
     useEffect(() => {
-        fetch("metadata.json").then(res => res.json()).then( (res: Metadata) =>
+        fetch(window.location.origin + "/metadata.json").then(res => res.json()).then( (res: Metadata) =>
         {
             res.albums = res.albums.sort((a, b) => {
                 const dateA = Date.parse(a.date)
@@ -37,16 +38,15 @@ function App() {
     }, [])
 
   return (
-    <>
-        <Artist artistName={metadata?.artistName}></Artist>
+    <MetadataContext.Provider value={metadata ?? null}>
+        <Artist></Artist>
         <BrowserRouter>
             <Routes>
-                <Route path={"/"} element={<Home metadata={metadata}/>}>
-                </Route>
-                <Route path={"album/:name"} element={<Album/>}></Route>
+                <Route path={"/"} element={<Home/>}></Route>
+                <Route path={"/album/:name"} element={<Album/>}></Route>
             </Routes>
         </BrowserRouter>
-    </>
+    </MetadataContext.Provider>
   )
 }
 

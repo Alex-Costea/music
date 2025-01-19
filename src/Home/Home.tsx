@@ -1,11 +1,9 @@
 import AlbumTile from "../AlbumTile/AlbumTile.tsx";
-import {Metadata} from "../App/App.tsx";
+import {useContext} from "react";
+import {MetadataContext} from "../MetadataContext/MetadataContext.tsx";
 
-interface HomeProps {
-    metadata?: Metadata
-}
-
-function Home({metadata}: HomeProps) {
+function Home() {
+    const metadata = useContext(MetadataContext)
     return <div className="tiles">
         {metadata?.albums && Array.from(metadata?.albums, (album) =>
             (

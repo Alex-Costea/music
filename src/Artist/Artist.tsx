@@ -1,10 +1,9 @@
 import "./Artist.css"
+import {useContext} from "react";
+import {MetadataContext} from "../MetadataContext/MetadataContext.tsx";
 
-interface ArtistProps {
-    artistName?: string | undefined
-}
-
-function Artist({artistName}: ArtistProps) {
+function Artist() {
+    const artistName = useContext(MetadataContext)?.artistName
     return <h1 className="artist">{artistName}</h1>
 }
 
