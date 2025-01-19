@@ -1,9 +1,12 @@
 import './App.css'
 import '../AlbumTile/AlbumTile'
-import AlbumTile from "../AlbumTile/AlbumTile.tsx";
 import {useEffect, useState} from "react";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Home from "../Home/Home.tsx";
+import Album from "../Album/Album.tsx";
+import Artist from "../Artist/Artist.tsx";
 
-interface Album{
+export interface Album{
     title : string
     date: string
     folder : string
@@ -11,7 +14,7 @@ interface Album{
     titleHidden: boolean | undefined
 }
 
-interface Metadata{
+export interface Metadata{
     albums : Album[],
     cdnLink : string,
     artistName : string
@@ -35,19 +38,14 @@ function App() {
 
   return (
     <>
-      <h1 className="artist">{metadata?.artistName}</h1>
-        <div className="tiles">
-            {metadata?.albums && Array.from(metadata?.albums, (album) =>
-                (
-                    <AlbumTile
-                        name={album.title}
-                        key={album.folder}
-                        folder={album.folder}
-                        subname={album.subtitle}
-                        titleHidden={album.titleHidden}
-                        cdnLink={metadata.cdnLink}/>
-                ))}
-        </div>
+        <Artist artistName={metadata?.artistName}></Artist>
+        <BrowserRouter>
+            <Routes>
+                <Route path={"/"} element={<Home metadata={metadata}/>}>
+                </Route>
+                <Route path={"album/:name"} element={<Album/>}></Route>
+            </Routes>
+        </BrowserRouter>
     </>
   )
 }
