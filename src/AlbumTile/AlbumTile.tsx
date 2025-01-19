@@ -1,4 +1,5 @@
 import './AlbumTile.css'
+import {Link} from "react-router-dom";
 
 interface AlbumTileProps {
     name: string,
@@ -11,14 +12,17 @@ interface AlbumTileProps {
 function AlbumTile({name, folder, subname, titleHidden, cdnLink}: AlbumTileProps) {
 
     return (
-        <div className={"albumTile"}>
-            <img
-                className="coverArt"
-                alt={name}
-                src={`${cdnLink}/mp3/${folder}/cover-small.webp`} />
-            <h2 className="albumName" data-title-hidden={titleHidden}>{name}</h2>
-            <h3 className="subtitle">{subname}</h3>
-        </div>
+            <div className={"albumTile"}>
+                <Link to={`/album/${folder}`}>
+                <img
+                    className="coverArt"
+                    alt={name}
+                    src={`${cdnLink}/mp3/${folder}/cover-small.webp`} />
+                <h2 className="albumName" data-title-hidden={titleHidden}>{name}</h2>
+                <h3 className="subtitle">{subname}</h3>
+                </Link>
+            </div>
+
     )
 }
 
