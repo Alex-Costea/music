@@ -6,50 +6,58 @@
       "title": "Our Future",
       "date": "2013-05-17",
       "folder" : "our-future",
-      "subtitle": "Departure: Southern Station."
+      "subtitle": "Departure: Southern Station.",
+      "nrTracks": 4
     },
     {
       "title": "Nceput",
       "date": "2018-09-28",
       "folder" : "nceput",
-      "subtitle": "Citrus × limon."
+      "subtitle": "Citrus × limon.",
+      "nrTracks": 10
     },
     {
       "title": "Voies Sporen",
       "date": "2019-05-18",
       "folder" : "voies-sporen",
-      "subtitle": "The artificial is more authentic than the real could ever be."
+      "subtitle": "The artificial is more authentic than the real could ever be.",
+      "nrTracks": 9
     },
     {
       "title": "(antiphony)",
       "date": "2020-04-25",
       "folder" : "antiphony",
       "subtitle": "it's not the time for symphonies.",
+      "nrTracks": 12,
       "titleHidden": true
     },
     {
       "title": "Wen Kintry",
       "date": "2021-03-19",
       "folder" : "wen-kintry",
-      "subtitle": "Where are the two lost voices, now the night is about to pass."
+      "subtitle": "Where are the two lost voices, now the night is about to pass.",
+      "nrTracks": 7
     },
     {
       "title": "Essentia: As The Music Resounds",
       "date": "2022-02-22",
       "folder" : "essentia",
-      "subtitle": "Că frumos mai cântă muzica."
+      "subtitle": "Că frumos mai cântă muzica.",
+      "nrTracks": 5
     },
     {
       "title": "K.S.L.L.K.",
       "date": "2022-10-05",
       "folder" : "ksllk",
-      "subtitle": "Ode to Lilith."
+      "subtitle": "Ode to Lilith.",
+      "nrTracks": 4
     },
     {
       "title": "No Sound Is Too Trivial To Ignore",
       "date": "2023-11-22",
       "folder" : "no-sound",
-      "subtitle": "Future breeze."
+      "subtitle": "Future breeze.",
+      "nrTracks": 4
     }
 
   ]

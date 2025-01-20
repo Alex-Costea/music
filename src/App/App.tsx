@@ -13,6 +13,7 @@ export interface Album{
     folder : string
     subtitle : string
     titleHidden: boolean | undefined
+    nrTracks : bigint
 }
 
 export interface Metadata{
