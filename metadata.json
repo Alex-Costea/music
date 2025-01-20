@@ -6,50 +6,295 @@
       "title": "Our Future",
       "date": "2013-05-17",
       "folder" : "our-future",
-      "subtitle": "Departure: Southern Station."
+      "subtitle": "Departure: Southern Station.",
+      "nrTracks": 4,
+      "tracks": [
+        {
+          "track": 1,
+          "title": "Turn Ball"
+        },
+        {
+          "track": 2,
+          "title": "Okay"
+        },
+        {
+          "track": 3,
+          "title": "A Song I Made"
+        },
+        {
+          "track": 4,
+          "title": "Our Future"
+        }
+      ]
     },
     {
       "title": "Nceput",
       "date": "2018-09-28",
       "folder" : "nceput",
-      "subtitle": "Citrus × limon."
+      "subtitle": "Citrus × limon.",
+      "nrTracks": 10,
+      "tracks": [
+        {
+          "track": 1,
+          "title": "Little Mouse"
+        },
+        {
+          "track": 2,
+          "title": "Slf / Huh"
+        },
+        {
+          "track": 3,
+          "title": "Ok2"
+        },
+        {
+          "track": 4,
+          "title": "ChPILOT (ft. Havia Nix)"
+        },
+        {
+          "track": 5,
+          "title": "Kkkkk9"
+        },
+        {
+          "track": 6,
+          "title": "Train2"
+        },
+        {
+          "track": 7,
+          "title": "Ant, Pt. 3"
+        },
+        {
+          "track": 8,
+          "title": "Nceput"
+        },
+        {
+          "track": 9,
+          "title": "Unstruct"
+        },
+        {
+          "track": 10,
+          "title": "W"
+        }
+      ]
     },
     {
       "title": "Voies Sporen",
       "date": "2019-05-18",
       "folder" : "voies-sporen",
-      "subtitle": "The artificial is more authentic than the real could ever be."
+      "subtitle": "The artificial is more authentic than the real could ever be.",
+      "nrTracks": 9,
+      "tracks": [
+        {
+          "track": 1,
+          "title": "Abstract"
+        },
+        {
+          "track": 2,
+          "title": "Genus"
+        },
+        {
+          "track": 3,
+          "title": "Tri"
+        },
+        {
+          "track": 4,
+          "title": "Said Words"
+        },
+        {
+          "track": 5,
+          "title": "Lowered"
+        },
+        {
+          "track": 6,
+          "title": "Außer"
+        },
+        {
+          "track": 7,
+          "title": "Thematic"
+        },
+        {
+          "track": 8,
+          "title": "λx.x"
+        },
+        {
+          "track": 9,
+          "title": "And I Seem..."
+        }
+      ]
     },
     {
       "title": "(antiphony)",
       "date": "2020-04-25",
       "folder" : "antiphony",
       "subtitle": "it's not the time for symphonies.",
+      "nrTracks": 12,
+      "tracks": [
+        {
+          "track": 1,
+          "title": "(forthecrown)"
+        },
+        {
+          "track": 2,
+          "title": "(miracleflower)"
+        },
+        {
+          "track": 3,
+          "title": "(adays)"
+        },
+        {
+          "track": 4,
+          "title": "(mami)"
+        },
+        {
+          "track": 5,
+          "title": "(munkiki)"
+        },
+        {
+          "track": 6,
+          "title": "(pandemos)"
+        },
+        {
+          "track": 7,
+          "title": "(phebomai)"
+        },
+        {
+          "track": 8,
+          "title": "(ring)"
+        },
+        {
+          "track": 9,
+          "title": "(derkaz)"
+        },
+        {
+          "track": 10,
+          "title": "(saviourcorn)"
+        },
+        {
+          "track": 11,
+          "title": "(breakice)"
+        },
+        {
+          "track": 12,
+          "title": "(exit)"
+        }
+      ],
       "titleHidden": true
     },
     {
       "title": "Wen Kintry",
       "date": "2021-03-19",
       "folder" : "wen-kintry",
-      "subtitle": "Where are the two lost voices, now the night is about to pass."
+      "subtitle": "Where are the two lost voices, now the night is about to pass.",
+      "nrTracks": 7,
+      "tracks": [
+        {
+          "track": 1,
+          "title": "Dead Summer"
+        },
+        {
+          "track": 2,
+          "title": "Moonsign"
+        },
+        {
+          "track": 3,
+          "title": "Kaymak"
+        },
+        {
+          "track": 4,
+          "title": "San Kenz"
+        },
+        {
+          "track": 5,
+          "title": "Abacaxi (ft. Havia Nix)"
+        },
+        {
+          "track": 6,
+          "title": "Can't Hide In Bucharest"
+        },
+        {
+          "track": 7,
+          "title": "So Long"
+        }
+      ]
     },
     {
       "title": "Essentia: As The Music Resounds",
       "date": "2022-02-22",
       "folder" : "essentia",
-      "subtitle": "Că frumos mai cântă muzica."
+      "subtitle": "Că frumos mai cântă muzica.",
+      "nrTracks": 5,
+      "tracks": [
+        {
+          "track": 1,
+          "title": "Geo: Nazar Lag Gayi (ft. Parr)"
+        },
+        {
+          "track": 2,
+          "title": "Hydro: Bogdaproste"
+        },
+        {
+          "track": 3,
+          "title": "Aero: It's Like Sky Diving"
+        },
+        {
+          "track": 4,
+          "title": "Pyro: Fire FM 67.6"
+        },
+        {
+          "track": 5,
+          "title": "Quinta: False Vacuum Decay"
+        }
+      ]
     },
     {
       "title": "K.S.L.L.K.",
       "date": "2022-10-05",
       "folder" : "ksllk",
-      "subtitle": "Ode to Lilith."
+      "subtitle": "Ode to Lilith.",
+      "nrTracks": 4,
+      "tracks": [
+        {
+          "track": 1,
+          "title": "Flatwoods"
+        },
+        {
+          "track": 2,
+          "title": "the screech owl also shall rest there, and find for herself a place of rest."
+        },
+        {
+          "track": 3,
+          "title": "Session Wave (ft. Havia Nix)"
+        },
+        {
+          "track": 4,
+          "title": "Fear In Your Favorite Music"
+        }
+      ]
     },
     {
       "title": "No Sound Is Too Trivial To Ignore",
       "date": "2023-11-22",
       "folder" : "no-sound",
-      "subtitle": "Future breeze."
+      "subtitle": "Future breeze.",
+      "nrTracks": 4,
+      "tracks": [
+        {
+          "track": 1,
+          "title": "Axolotlatl"
+        },
+        {
+          "track": 2,
+          "title": "Pace Era"
+        },
+        {
+          "track": 3,
+          "title": "label20user interface) A non,the purpose of another control."
+        },
+        {
+          "track": 4,
+          "title": "It's Finished And I Need To Ascend"
+        }
+      ]
+
     }
 
   ]
