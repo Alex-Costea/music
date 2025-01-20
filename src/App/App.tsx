@@ -7,17 +7,23 @@ import Album from "../Album/Album.tsx";
 import Artist from "../Artist/Artist.tsx";
 import { MetadataContext } from '../MetadataContext/MetadataContext.tsx';
 
-export interface Album{
+export interface TrackMetadata {
+    track : bigint,
+    title: string
+}
+
+export interface AlbumMetadata {
     title : string
     date: string
     folder : string
     subtitle : string
     titleHidden: boolean | undefined
-    nrTracks : bigint
+    nrTracks : bigint,
+    tracks : TrackMetadata[]
 }
 
 export interface Metadata{
-    albums : Album[],
+    albums : AlbumMetadata[],
     cdnLink : string,
     artistName : string
 }

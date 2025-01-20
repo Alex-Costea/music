@@ -1,20 +1,12 @@
 import {useParams} from "react-router-dom";
 import {MetadataContext} from "../MetadataContext/MetadataContext.tsx";
 import {useContext, useEffect, useState} from "react";
-import {parseWebStream} from "music-metadata";
 
 interface Track {
     url: string,
     filename : string
-    number : number
-}
-
-async function getTitle(url : string)
-{
-    const response = await fetch(url)
-    const body = response.body
-    const metadata = await parseWebStream(body)
-    return metadata.common.title
+    number : number,
+    title: string
 }
 
 function Album() {
@@ -30,23 +22,24 @@ function Album() {
         {
             const trackFilenames : string[] =
                 Array.from(new Array(album?.nrTracks), (_, i ) => `${folder}${(i+1).toString()}`)
-            const trackURLs: string[] = trackFilenames.map((_, i) =>
-                `${metadata?.cdnLink}/mp3/${folder}/${folder}${(i+1).toString()}.mp3`)
-            function initTrack(url : string, filename: string, number : number)
+            function initTrack(url : string, filename: string, number : number, title : string)
             {
                 return {
                     filename : filename,
                     url: url,
-                    number : number
+                    number : number,
+                    title: title
                 } as Track
             }
             const newTracks : Track[] = []
-            trackFilenames.forEach((trackName, i) => {
-                const trackURL = trackURLs[i]
-                newTracks.push(initTrack(trackURL, trackName, i+1))
+            const tracksMetadata = metadata.albums.filter(album => album.folder === folder)[0].tracks
+            trackFilenames.forEach((fileName, i) => {
+                const trackURL = `${metadata?.cdnLink}/mp3/${folder}/${fileName}.mp3`
+                const title = tracksMetadata.filter(track =>
+                    track.track.toString() === (i+1).toString())[0].title
+                newTracks.push(initTrack(trackURL, fileName, i+1, title))
             })
             setTracks(newTracks.sort((a,b) => a.number - b.number))
-            console.log(tracks)
         }
     }, [album?.nrTracks, folder, metadata, tracks])
 
@@ -57,7 +50,7 @@ function Album() {
             }
             {tracks.length > 0 && Array.from(tracks, (track, i) =>
                 <div key={i}>
-                    <h3>{track.filename}</h3>
+                    <h3>{track.title}</h3>
                     <audio controls src={track.url}></audio>
                 </div>
             )}
