@@ -1,0 +1,31 @@
+.AlbumPage{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 5%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.largeCoverArt{
+    height: 50svmin;
+    width: 50svmin
+}
+
+.part1, .part2{
+    width: 70svmin;
+    flex: 1;
+}
+
+.part1{
+    margin-top: 5%;
+}
+
+li{
+    list-style: none;
+}
+
+.trackNr{
+    user-select: none;
+}

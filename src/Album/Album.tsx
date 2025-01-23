@@ -1,6 +1,7 @@
 import {useParams} from "react-router-dom";
 import {MetadataContext} from "../MetadataContext/MetadataContext.tsx";
 import {useContext, useEffect, useState} from "react";
+import "./Album.css"
 
 interface Track {
     url: string,
@@ -44,17 +45,28 @@ function Album() {
     }, [album?.nrTracks, folder, metadata, tracks])
 
     return <MetadataContext.Provider value={metadata}>
-        <>
-            {album &&
-                <h2>{album.title}</h2>
-            }
-            {tracks.length > 0 && Array.from(tracks, (track, i) =>
-                <div key={i}>
-                    <h3>{track.title}</h3>
-                    <audio controls src={track.url}></audio>
-                </div>
-            )}
-        </>
+        <div className="AlbumPage">
+            <div className="part1">
+                <img
+                    className="coverArt largeCoverArt"
+                    alt={album?.title}
+                    src={`${metadata?.cdnLink}/mp3/${folder}/cover-small.webp`} />
+                {album &&
+                    <>
+                        <h2>{album.title}</h2>
+                        <h3>{album.subtitle}</h3>
+                    </>
+                }
+            </div>
+            <ol className={"part2"}>
+                {tracks.length > 0 && Array.from(tracks, (track, i) =>
+                    <div key={i}>
+                        <li><h3><span className={"trackNr"}>{track.number}. </span>{track.title}</h3></li>
+                        <audio controls src={track.url}></audio>
+                    </div>
+                )}
+            </ol>
+        </div>
     </MetadataContext.Provider>
 }
 
