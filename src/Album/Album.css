@@ -29,3 +29,7 @@ li{
 .trackNr{
     user-select: none;
 }
+
+ol{
+    padding: 0;
+}
