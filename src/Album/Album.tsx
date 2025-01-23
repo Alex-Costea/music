@@ -58,11 +58,13 @@ function Album() {
 
             </div>
             <ol className={"part2"}>
-                {tracks.length > 0 && Array.from(tracks, (track, i) =>
+                {tracks.length > 0 && Array.from(
+                    tracks.filter(id => trackID ? id.number.toString() === trackID.toString() : true),
+                    (track, i) =>
                     <div key={i}>
-                        <li><h3><span className={"trackNr"}>{track.number}. </span>
-                            <Link to={`/album/${album?.folder}/${track.number}`}
-                                  className={trackID===track?.number.toString() ? "selected" : ""}>
+                        <li><h3>
+                            <span className={"trackNr"}>{trackID?'':`${track.number}. `}</span>
+                            <Link to={`/album/${album?.folder}/${track.number}`}>
                                 {track.title}
                             </Link>
                         </h3></li>

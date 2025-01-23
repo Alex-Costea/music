@@ -29,7 +29,3 @@ li{
 .trackNr{
     user-select: none;
 }
-
-.selected{
-    font-style: italic;
-}
