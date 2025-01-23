@@ -13,7 +13,7 @@ function AlbumTile({name, folder, subname, titleHidden, cdnLink}: AlbumTileProps
 
     return (
             <div className={"albumTile"}>
-                <Link to={`/album/${folder}`}>
+                <Link to={`/${folder}`}>
                 <img
                     className="coverArt"
                     alt={name}

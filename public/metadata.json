@@ -11,19 +11,23 @@
       "tracks": [
         {
           "track": 1,
-          "title": "Turn Ball"
+          "title": "Turn Ball",
+          "folder": "turn-ball"
         },
         {
           "track": 2,
-          "title": "Okay"
+          "title": "Okay",
+          "folder": "okay"
         },
         {
           "track": 3,
-          "title": "A Song I Made"
+          "title": "A Song I Made",
+          "folder": "a-song"
         },
         {
           "track": 4,
-          "title": "Our Future"
+          "title": "Our Future",
+          "folder": "our-future"
         }
       ]
     },
@@ -36,43 +40,53 @@
       "tracks": [
         {
           "track": 1,
-          "title": "Little Mouse"
+          "title": "Little Mouse",
+          "folder": "little-mouse"
         },
         {
           "track": 2,
-          "title": "Slf / Huh"
+          "title": "Slf / Huh",
+          "folder": "slf-huh"
         },
         {
           "track": 3,
-          "title": "Ok2"
+          "title": "Ok2",
+          "folder": "ok2"
         },
         {
           "track": 4,
-          "title": "ChPILOT (ft. Havia Nix)"
+          "title": "ChPILOT (ft. Havia Nix)",
+          "folder": "chpilot"
         },
         {
           "track": 5,
-          "title": "Kkkkk9"
+          "title": "Kkkkk9",
+          "folder": "kkkk9"
         },
         {
           "track": 6,
-          "title": "Train2"
+          "title": "Train2",
+          "folder": "train2"
         },
         {
           "track": 7,
-          "title": "Ant, Pt. 3"
+          "title": "Ant, Pt. 3",
+          "folder": "ant-pt-3"
         },
         {
           "track": 8,
-          "title": "Nceput"
+          "title": "Nceput",
+          "folder": "nceput"
         },
         {
           "track": 9,
-          "title": "Unstruct"
+          "title": "Unstruct",
+          "folder": "unstruct"
         },
         {
           "track": 10,
-          "title": "W"
+          "title": "W",
+          "folder": "w"
         }
       ]
     },
@@ -85,39 +99,48 @@
       "tracks": [
         {
           "track": 1,
-          "title": "Abstract"
+          "title": "Abstract",
+          "folder": "abstract"
         },
         {
           "track": 2,
-          "title": "Genus"
+          "title": "Genus",
+          "folder": "genus"
         },
         {
           "track": 3,
-          "title": "Tri"
+          "title": "Tri",
+          "folder": "tri"
         },
         {
           "track": 4,
-          "title": "Said Words"
+          "title": "Said Words",
+          "folder": "said-words"
         },
         {
           "track": 5,
-          "title": "Lowered"
+          "title": "Lowered",
+          "folder": "lowered"
         },
         {
           "track": 6,
-          "title": "Außer"
+          "title": "Außer",
+          "folder": "ausser"
         },
         {
           "track": 7,
-          "title": "Thematic"
+          "title": "Thematic",
+          "folder": "thematic"
         },
         {
           "track": 8,
-          "title": "λx.x"
+          "title": "λx.x",
+          "folder": "lambda"
         },
         {
           "track": 9,
-          "title": "And I Seem..."
+          "title": "And I Seem...",
+          "folder": "and-i-seem"
         }
       ]
     },
@@ -130,51 +153,63 @@
       "tracks": [
         {
           "track": 1,
-          "title": "(forthecrown)"
+          "title": "(forthecrown)",
+          "folder": "crown"
         },
         {
           "track": 2,
-          "title": "(miracleflower)"
+          "title": "(miracleflower)",
+          "folder": "miracleflower"
         },
         {
           "track": 3,
-          "title": "(adays)"
+          "title": "(adays)",
+          "folder": "adays"
         },
         {
           "track": 4,
-          "title": "(mami)"
+          "title": "(mami)",
+          "folder": "mami"
         },
         {
           "track": 5,
-          "title": "(munkiki)"
+          "title": "(munkiki)",
+          "folder": "munkiki"
         },
         {
           "track": 6,
-          "title": "(pandemos)"
+          "title": "(pandemos)",
+          "folder": "(pandemos)"
         },
         {
           "track": 7,
-          "title": "(phebomai)"
+          "title": "(phebomai)",
+          "folder": "phebomai"
         },
         {
           "track": 8,
-          "title": "(ring)"
+          "title": "(ring)",
+          "folder": "ring"
         },
         {
           "track": 9,
-          "title": "(derkaz)"
+          "title": "(derkaz)",
+          "folder": "derkaz"
         },
         {
           "track": 10,
-          "title": "(saviourcorn)"
+          "title": "(saviourcorn)",
+          "folder": "corn"
         },
         {
           "track": 11,
-          "title": "(breakice)"
+          "title": "(breakice)",
+          "folder": "breakice"
         },
         {
           "track": 12,
-          "title": "(exit)"
+          "title": "(exit)",
+          "folder": "exit"
         }
       ],
       "titleHidden": true
@@ -188,31 +223,38 @@
       "tracks": [
         {
           "track": 1,
-          "title": "Dead Summer"
+          "title": "Dead Summer",
+          "folder": "dead-summer"
         },
         {
           "track": 2,
-          "title": "Moonsign"
+          "title": "Moonsign",
+          "folder": "moonsign"
         },
         {
           "track": 3,
-          "title": "Kaymak"
+          "title": "Kaymak",
+          "folder": "kaymak"
         },
         {
           "track": 4,
-          "title": "San Kenz"
+          "title": "San Kenz",
+          "folder": "san-kenz"
         },
         {
           "track": 5,
-          "title": "Abacaxi (ft. Havia Nix)"
+          "title": "Abacaxi (ft. Havia Nix)",
+          "folder": "abacaxi"
         },
         {
           "track": 6,
-          "title": "Can't Hide In Bucharest"
+          "title": "Can't Hide In Bucharest",
+          "folder": "bucharest"
         },
         {
           "track": 7,
-          "title": "So Long"
+          "title": "So Long",
+          "folder": "so-long"
         }
       ]
     },
@@ -225,23 +267,28 @@
       "tracks": [
         {
           "track": 1,
-          "title": "Geo: Nazar Lag Gayi (ft. Parr)"
+          "title": "Geo: Nazar Lag Gayi (ft. Parr)",
+          "folder": "nazar-lag-gayi"
         },
         {
           "track": 2,
-          "title": "Hydro: Bogdaproste"
+          "title": "Hydro: Bogdaproste",
+          "folder": "bogdaproste"
         },
         {
           "track": 3,
-          "title": "Aero: It's Like Sky Diving"
+          "title": "Aero: It's Like Sky Diving",
+          "folder": "sky-diving"
         },
         {
           "track": 4,
-          "title": "Pyro: Fire FM 67.6"
+          "title": "Pyro: Fire FM 67.6",
+          "folder": "fire-fm"
         },
         {
           "track": 5,
-          "title": "Quinta: False Vacuum Decay"
+          "title": "Quinta: False Vacuum Decay",
+          "folder": "false-vacuum-decay"
         }
       ]
     },
@@ -254,19 +301,23 @@
       "tracks": [
         {
           "track": 1,
-          "title": "Flatwoods"
+          "title": "Flatwoods",
+          "folder": "flatwoods"
         },
         {
           "track": 2,
-          "title": "the screech owl also shall rest there, and find for herself a place of rest."
+          "title": "the screech owl also shall rest there, and find for herself a place of rest.",
+          "folder": "screech-owl"
         },
         {
           "track": 3,
-          "title": "Session Wave (ft. Havia Nix)"
+          "title": "Session Wave (ft. Havia Nix)",
+          "folder": "session-wave"
         },
         {
           "track": 4,
-          "title": "Fear In Your Favorite Music"
+          "title": "Fear In Your Favorite Music",
+          "folder": "fear"
         }
       ]
     },
@@ -279,19 +330,23 @@
       "tracks": [
         {
           "track": 1,
-          "title": "Axolotlatl"
+          "title": "Axolotlatl",
+          "folder": "axolotlatl"
         },
         {
           "track": 2,
-          "title": "Pace Era"
+          "title": "Pace Era",
+          "folder": "pace-era"
         },
         {
           "track": 3,
-          "title": "label20user interface) A non,the purpose of another control."
+          "title": "label20user interface) A non,the purpose of another control.",
+          "folder": "label20user-interface"
         },
         {
           "track": 4,
-          "title": "It's Finished And I Need To Ascend"
+          "title": "It's Finished And I Need To Ascend",
+          "folder": "its-finished"
         }
       ]
 

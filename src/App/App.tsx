@@ -9,7 +9,8 @@ import { MetadataContext } from '../MetadataContext/MetadataContext.tsx';
 
 export interface TrackMetadata {
     track : bigint,
-    title: string
+    title: string,
+    folder : string
 }
 
 export interface AlbumMetadata {
@@ -25,7 +26,7 @@ export interface AlbumMetadata {
 export interface Metadata{
     albums : AlbumMetadata[],
     cdnLink : string,
-    artistName : string
+    artistName : string,
 }
 
 function App() {
@@ -50,8 +51,8 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path={"/"} element={<Home/>}></Route>
-                <Route path={"/album/:folder"} element={<Album/>}></Route>
-                <Route path={"/album/:folder/:trackID"} element={<Album/>}></Route>
+                <Route path={"/:currentAlbum"} element={<Album/>}></Route>
+                <Route path={"/:currentAlbum/:currentTrack"} element={<Album/>}></Route>
             </Routes>
         </BrowserRouter>
     </MetadataContext.Provider>
