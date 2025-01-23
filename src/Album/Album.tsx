@@ -1,4 +1,4 @@
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import {MetadataContext} from "../MetadataContext/MetadataContext.tsx";
 import {useContext, useEffect, useState} from "react";
 import "./Album.css"
@@ -11,10 +11,9 @@ interface Track {
 }
 
 function Album() {
-    const {folder} = useParams()
+    const {folder, trackID} = useParams()
     const metadata = useContext(MetadataContext)
     const album = metadata?.albums.filter(it => it.folder === folder)[0]
-
     const [tracks, setTracks] = useState<Track[]>([])
 
     useEffect(() =>
@@ -32,7 +31,7 @@ function Album() {
                     title: title
                 } as Track
             }
-            const newTracks : Track[] = []
+            let newTracks : Track[] = []
             const tracksMetadata = metadata.albums.filter(album => album.folder === folder)[0].tracks
             trackFilenames.forEach((fileName, i) => {
                 const trackURL = `${metadata?.cdnLink}/mp3/${folder}/${fileName}.mp3`
@@ -40,28 +39,33 @@ function Album() {
                     track.track.toString() === (i+1).toString())[0].title
                 newTracks.push(initTrack(trackURL, fileName, i+1, title))
             })
-            setTracks(newTracks.sort((a,b) => a.number - b.number))
+            newTracks = newTracks.sort((a,b) => a.number - b.number)
+            setTracks(newTracks)
         }
-    }, [album?.nrTracks, folder, metadata, tracks])
+    }, [album?.nrTracks, folder, metadata, trackID, tracks])
 
     return <MetadataContext.Provider value={metadata}>
         <div className="AlbumPage">
             <div className="part1">
-                <img
-                    className="coverArt largeCoverArt"
-                    alt={album?.title}
-                    src={`${metadata?.cdnLink}/mp3/${folder}/cover-small.webp`} />
-                {album &&
-                    <>
-                        <h2>{album.title}</h2>
-                        <h3>{album.subtitle}</h3>
-                    </>
-                }
+                <Link to={`/album/${album?.folder}`}>
+                    <img
+                        className="coverArt largeCoverArt"
+                        alt={album?.title}
+                        src={`${metadata?.cdnLink}/mp3/${folder}/cover-small.webp`} />
+                    <h2 className={"albumName"}>{album?.title}</h2>
+                    <h3 className={"subtitle"}>{album?.subtitle}</h3>
+                </Link>
+
             </div>
             <ol className={"part2"}>
                 {tracks.length > 0 && Array.from(tracks, (track, i) =>
                     <div key={i}>
-                        <li><h3><span className={"trackNr"}>{track.number}. </span>{track.title}</h3></li>
+                        <li><h3><span className={"trackNr"}>{track.number}. </span>
+                            <Link to={`/album/${album?.folder}/${track.number}`}
+                                  className={trackID===track?.number.toString() ? "selected" : ""}>
+                                {track.title}
+                            </Link>
+                        </h3></li>
                         <audio controls src={track.url}></audio>
                     </div>
                 )}

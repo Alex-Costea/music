@@ -51,6 +51,7 @@ function App() {
             <Routes>
                 <Route path={"/"} element={<Home/>}></Route>
                 <Route path={"/album/:folder"} element={<Album/>}></Route>
+                <Route path={"/album/:folder/:trackID"} element={<Album/>}></Route>
             </Routes>
         </BrowserRouter>
     </MetadataContext.Provider>
