@@ -1,6 +1,7 @@
 .AlbumPage{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
     width: 100%;
     height: 100%;
     gap: 5%;
@@ -33,3 +34,11 @@ li{
 ol{
     padding: 0;
 }
+
+/*
+body{
+    background-image: url("../assets/nosound.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}*/
