@@ -36,11 +36,12 @@
     box-shadow: rgba(240, 46, 170, 0.4) 0 0 50px;
 }
 
-.albumName[data-title-hidden="true"]{
+*[data-title-hidden="true"]{
     color: rgba(255,255,255,0);
 }
 
-.albumName[data-title-hidden="true"]:focus,
-.albumName[data-title-hidden="true"]::selection{
+*[data-title-hidden="true"]:focus,
+*[data-title-hidden="true"]:active,
+*[data-title-hidden="true"]::selection{
     color: white;
 }

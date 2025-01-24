@@ -10,7 +10,8 @@ import { MetadataContext } from '../MetadataContext/MetadataContext.tsx';
 export interface TrackMetadata {
     track : bigint,
     title: string,
-    folder : string
+    folder : string,
+    trackDisplayed? : number
 }
 
 export interface AlbumMetadata {

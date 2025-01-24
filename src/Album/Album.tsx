@@ -8,17 +8,20 @@ interface Track {
     filename : string
     number : number,
     title: string,
-    folder : string
+    folder : string,
+    numberDisplayed? : number
 }
 
-function initTrack(url : string, filename: string, number : number, title : string, folder: string)
+function initTrack(url : string, filename: string, number : number, title : string, folder: string
+                   , numberDisplayed? : number)
 {
     return {
         filename : filename,
         url: url,
         number : number,
         title: title,
-        folder : folder
+        folder : folder,
+        numberDisplayed : numberDisplayed
     } as Track
 }
 
@@ -32,6 +35,7 @@ function Album() {
     {
         if(tracks.length == 0 && metadata)
         {
+            console.log(metadata)
             const trackFilenames : string[] =
                 Array.from(new Array(album?.nrTracks), (_, i ) => `${currentAlbum}${(i+1).toString()}`)
             let newTracks : Track[] = []
@@ -40,9 +44,10 @@ function Album() {
                 const trackURL = `${metadata?.cdnLink}/mp3/${currentAlbum}/${fileName}.mp3`
                 const track = tracksMetadata.filter(track =>
                     track.track.toString() === (i+1).toString())[0]
-                newTracks.push(initTrack(trackURL, fileName, i+1, track.title, track.folder))
+                newTracks.push(initTrack(trackURL, fileName, i+1, track.title, track.folder, track.trackDisplayed))
             })
             newTracks = newTracks.sort((a,b) => a.number - b.number)
+            console.log(newTracks)
             setTracks(newTracks)
         }
     }, [album?.nrTracks, currentAlbum, metadata, currentTrack, tracks])
@@ -55,8 +60,8 @@ function Album() {
                         className="coverArt largeCoverArt"
                         alt={album?.title}
                         src={`${metadata?.cdnLink}/mp3/${currentAlbum}/cover-small.webp`} />
-                    <h2 className={"albumName"}>{album?.title}</h2>
-                    <h3 className={"subtitle"}>{album?.subtitle}</h3>
+                    <h2 className={"albumName"} data-title-hidden={album?.titleHidden}>{album?.title}</h2>
+                    <h3 className={"subtitle"} data-title-hidden={album?.titleHidden}>{album?.subtitle}</h3>
                 </Link>
 
             </div>
@@ -66,8 +71,10 @@ function Album() {
                     (track, i) =>
                     <div key={i}>
                         <li><h3>
-                            <span className={"trackNr"}>{currentTrack?'':`${track.number}. `}</span>
-                            <Link to={`/${album?.folder}/${track.folder}`}>
+                            <span className={"trackNr"}>
+                                {currentTrack?'':`${track.numberDisplayed ?? track.number}. `}
+                            </span>
+                            <Link to={`/${album?.folder}/${track.folder}`} data-title-hidden={album?.titleHidden}>
                                 {track.title}
                             </Link>
                         </h3></li>

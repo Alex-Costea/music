@@ -19,7 +19,7 @@ function AlbumTile({name, folder, subname, titleHidden, cdnLink}: AlbumTileProps
                     alt={name}
                     src={`${cdnLink}/mp3/${folder}/cover-small.webp`} />
                 <h2 className="albumName" data-title-hidden={titleHidden}>{name}</h2>
-                <h3 className="subtitle">{subname}</h3>
+                <h3 className="subtitle" data-title-hidden={titleHidden}>{subname}</h3>
                 </Link>
             </div>
 

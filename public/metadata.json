@@ -32,7 +32,7 @@
       ]
     },
     {
-      "title": "Nceput",
+      "title": "nceput",
       "date": "2018-09-28",
       "folder" : "nceput",
       "subtitle": "Citrus × limon.",
@@ -40,17 +40,17 @@
       "tracks": [
         {
           "track": 1,
-          "title": "Little Mouse",
+          "title": "little mouse",
           "folder": "little-mouse"
         },
         {
           "track": 2,
-          "title": "Slf / Huh",
+          "title": "slf / huh",
           "folder": "slf-huh"
         },
         {
           "track": 3,
-          "title": "Ok2",
+          "title": "ok2",
           "folder": "ok2"
         },
         {
@@ -60,32 +60,32 @@
         },
         {
           "track": 5,
-          "title": "Kkkkk9",
+          "title": "kkkkk9",
           "folder": "kkkkk9"
         },
         {
           "track": 6,
-          "title": "Train2",
+          "title": "train2",
           "folder": "train2"
         },
         {
           "track": 7,
-          "title": "Ant, Pt. 3",
+          "title": "ant, pt. 3",
           "folder": "t"
         },
         {
           "track": 8,
-          "title": "Ânceput",
+          "title": "ânceput",
           "folder": "anceput"
         },
         {
           "track": 9,
-          "title": "Unstruct",
+          "title": "unstruct",
           "folder": "isdesign"
         },
         {
           "track": 10,
-          "title": "W",
+          "title": "w",
           "folder": "w"
         }
       ]
@@ -268,27 +268,32 @@
         {
           "track": 1,
           "title": "Geo: Nazar Lag Gayi (ft. Parr)",
-          "folder": "nazar"
+          "folder": "semarc",
+          "trackDisplayed": 6
         },
         {
           "track": 2,
           "title": "Hydro: Bogdaproste",
-          "folder": "bogdaproste"
+          "folder": "drought",
+          "trackDisplayed": 20
         },
         {
           "track": 3,
           "title": "Aero: It's Like Sky Diving",
-          "folder": "sky-diving"
+          "folder": "sky-diving",
+          "trackDisplayed": 8
         },
         {
           "track": 4,
           "title": "Pyro: Fire FM 67.6",
-          "folder": "fire-fm"
+          "folder": "fire-fm",
+          "trackDisplayed": 4
         },
         {
           "track": 5,
           "title": "Quinta: False Vacuum Decay",
-          "folder": "false-vacuum-decay"
+          "folder": "false-vacuum-decay",
+          "trackDisplayed": 12
         }
       ]
     },
