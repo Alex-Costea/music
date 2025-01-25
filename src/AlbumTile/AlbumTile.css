@@ -32,7 +32,7 @@
     border-radius: 5px;
 }
 
-.coverArt{
+.coverArt:not(.no-border){
     box-shadow: rgba(240, 46, 170, 0.4) 0 0 50px;
 }
 

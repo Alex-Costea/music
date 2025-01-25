@@ -19,8 +19,12 @@ export interface AlbumMetadata {
     date: string
     folder : string
     subtitle : string
-    titleHidden: boolean | undefined
-    nrTracks : bigint,
+    titleHidden?: boolean
+    specialCover?: boolean
+    specialBackground? : boolean
+    hideTitleOnPage? : boolean
+    noBorderOnCover? : boolean
+    nrTracks : bigint
     tracks : TrackMetadata[]
 }
 

@@ -54,13 +54,31 @@ function Album() {
 
     return <MetadataContext.Provider value={metadata}>
         <div className="AlbumPage">
+            {
+                album?.specialBackground &&
+                <style>{ `
+                body{
+                    background-image: url("${metadata?.cdnLink}/mp3/${currentAlbum}/background.webp");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                }
+            ` }</style>
+            }
+
             <div className="part1">
                 <Link to={`/${album?.folder}`}>
                     <img
-                        className="coverArt largeCoverArt"
+                        className={`coverArt largeCoverArt ${album?.noBorderOnCover ? "no-border" : ""}`}
                         alt={album?.title}
-                        src={`${metadata?.cdnLink}/mp3/${currentAlbum}/cover-small.webp`} />
-                    <h2 className={"albumName"} data-title-hidden={album?.titleHidden}>{album?.title}</h2>
+                        src={
+                        `${metadata?.cdnLink}/mp3/${currentAlbum}/` +
+                           ( album?.specialBackground? "cover-album-page.webp" : "cover-small.webp")
+                    } />
+                    {
+                        !(album?.hideTitleOnPage ) &&
+                        <h2 className={"albumName"} data-title-hidden={album?.titleHidden}>{album?.title}</h2>
+                    }
                     <h3 className={"subtitle"} data-title-hidden={album?.titleHidden}>{album?.subtitle}</h3>
                 </Link>
 
@@ -69,7 +87,7 @@ function Album() {
                 {tracks.length > 0 && Array.from(
                     tracks.filter(id => currentTrack ? id.folder === currentTrack: true),
                     (track, i) =>
-                    <div key={i}>
+                    <div key={i} className={"trackDiv"}>
                         <li><h3>
                             <span className={"trackNr"}>
                                 {currentTrack?'':`${track.numberDisplayed ?? track.number}. `}

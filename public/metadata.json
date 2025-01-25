@@ -332,6 +332,10 @@
       "folder" : "no-sound",
       "subtitle": "Future breeze.",
       "nrTracks": 4,
+      "specialCover": true,
+      "specialBackground": true,
+      "hideTitleOnPage": true,
+      "noBorderOnCover": true,
       "tracks": [
         {
           "track": 1,

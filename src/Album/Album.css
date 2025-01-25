@@ -10,7 +10,6 @@
 }
 
 .largeCoverArt{
-    height: 50svmin;
     width: 50svmin
 }
 
@@ -35,10 +34,6 @@ ol{
     padding: 0;
 }
 
-/*
-body{
-    background-image: url("../assets/nosound.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}*/
+.trackDiv, .albumName, .subtitle{
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+}
