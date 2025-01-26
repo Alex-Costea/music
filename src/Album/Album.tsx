@@ -1,9 +1,11 @@
-import {Link, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import {MetadataContext} from "../MetadataContext/MetadataContext.tsx";
 import {useContext, useEffect, useState} from "react";
 import "./Album.css"
+import TrackElement from "../TrackElement/TrackElement.tsx";
+import AlbumInfo from "../AlbumInfo/AlbumInfo.tsx";
 
-interface Track {
+export interface Track {
     url: string,
     filename : string
     number : number,
@@ -35,7 +37,6 @@ function Album() {
     {
         if(tracks.length == 0 && metadata)
         {
-            console.log(metadata)
             const trackFilenames : string[] =
                 Array.from(new Array(album?.nrTracks), (_, i ) => `${currentAlbum}${(i+1).toString()}`)
             let newTracks : Track[] = []
@@ -65,39 +66,12 @@ function Album() {
                 }
             ` }</style>
             }
-
-            <div className="part1">
-                <Link to={`/${album?.folder}`}>
-                    <img
-                        className={`coverArt largeCoverArt ${album?.noBorderOnCover ? "no-border" : ""}`}
-                        alt={album?.title}
-                        src={
-                        `${metadata?.cdnLink}/mp3/${currentAlbum}/` +
-                           ( album?.specialBackground? "cover-album-page.webp" : "cover-small.webp")
-                    } />
-                    {
-                        !(album?.hideTitleOnPage ) &&
-                        <h2 className={"albumName"} data-title-hidden={album?.titleHidden}>{album?.title}</h2>
-                    }
-                    <h3 className={"subtitle"} data-title-hidden={album?.titleHidden}>{album?.subtitle}</h3>
-                </Link>
-
-            </div>
+            <AlbumInfo album={album}></AlbumInfo>
             <ol className={"part2"}>
                 {tracks.length > 0 && Array.from(
                     tracks.filter(id => currentTrack ? id.folder === currentTrack: true),
                     (track, i) =>
-                    <div key={i} className={"trackDiv"}>
-                        <li><h3>
-                            <span className={"trackNr"}>
-                                {currentTrack?'':`${track.numberDisplayed ?? track.number}. `}
-                            </span>
-                            <Link to={`/${album?.folder}/${track.folder}`} data-title-hidden={album?.titleHidden}>
-                                {track.title}
-                            </Link>
-                        </h3></li>
-                        <audio controls src={track.url}></audio>
-                    </div>
+                        <TrackElement key={i} track={track} album={album} isCurrentTrack={Boolean(currentTrack)}/>
                 )}
             </ol>
         </div>
