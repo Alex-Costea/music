@@ -14,7 +14,7 @@
 }
 
 .part1, .part2{
-    min-width: 18em;
+    min-width: 25em;
     flex: 1;
 }
 
