@@ -26,6 +26,9 @@ function Player()
         setCoordinates({x : data.x, y : data.y})
     }
 
+    if(!trackList)
+        return null
+
     return <Draggable bounds={"html"}
                       defaultPosition={coordinates ?? undefined}
                       cancel={'.need-interaction'}
