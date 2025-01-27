@@ -1,6 +1,10 @@
 import {Link} from "react-router-dom";
 import {Track} from "../Album/Album.tsx";
 import {AlbumMetadata} from "../App/App.tsx";
+import { useGlobalAudioPlayer } from 'react-use-audio-player';
+import "./Track.css"
+import {useContext} from "react";
+import {PlayerContext} from "../PlayerContext/PlayerContext.tsx";
 
 interface TrackProps{
     album? : AlbumMetadata
@@ -10,6 +14,25 @@ interface TrackProps{
 
 function TrackElement({track, album, isCurrentTrack} : TrackProps)
 {
+    const playerData = useContext(PlayerContext)!
+    const playingTrack = playerData?.playingTrack
+    const setPlayingTrack = playerData?.setPlayingTrack
+    const {load, pause, play, playing} = useGlobalAudioPlayer()
+
+    function onPlay() {
+        if(playingTrack !== track.folder)
+        {
+            setPlayingTrack(track.folder)
+            load(track.url, {autoplay: true})
+        }
+        else if(!playing)
+            play()
+    }
+
+    function onPause() {
+        pause()
+    }
+
     return <div className={"trackDiv"}>
         <li><h3>
                             <span className={"trackNr"}>
@@ -19,7 +42,10 @@ function TrackElement({track, album, isCurrentTrack} : TrackProps)
                 {track.title}
             </Link>
         </h3></li>
-        <audio controls src={track.url}></audio>
+        <div className={"controls"}>
+            <button onClick={onPlay} className={"controlButton"}>▶︎</button>
+            <button onClick={onPause} className={"controlButton"}>⏸︎</button>
+        </div>
     </div>
 }
 

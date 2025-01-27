@@ -4,6 +4,7 @@ import {useContext, useEffect, useState} from "react";
 import "./Album.css"
 import TrackElement from "../TrackElement/TrackElement.tsx";
 import AlbumInfo from "../AlbumInfo/AlbumInfo.tsx";
+import Artist from "../Artist/Artist.tsx";
 
 export interface Track {
     url: string,
@@ -48,12 +49,12 @@ function Album() {
                 newTracks.push(initTrack(trackURL, fileName, i+1, track.title, track.folder, track.trackDisplayed))
             })
             newTracks = newTracks.sort((a,b) => a.number - b.number)
-            console.log(newTracks)
             setTracks(newTracks)
         }
     }, [album?.nrTracks, currentAlbum, metadata, currentTrack, tracks])
 
     return <MetadataContext.Provider value={metadata}>
+        <Artist></Artist>
         <div className="AlbumPage">
             {
                 album?.specialBackground &&

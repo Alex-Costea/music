@@ -4,8 +4,8 @@ import {useEffect, useState} from "react";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "../Home/Home.tsx";
 import Album from "../Album/Album.tsx";
-import Artist from "../Artist/Artist.tsx";
 import { MetadataContext } from '../MetadataContext/MetadataContext.tsx';
+import {PlayerContext} from "../PlayerContext/PlayerContext.tsx";
 
 export interface TrackMetadata {
     track : bigint,
@@ -34,8 +34,14 @@ export interface Metadata{
     artistName : string,
 }
 
+export interface PlayerData{
+    playingTrack : string | null
+    setPlayingTrack : (playingTrack : string | null) => void
+}
+
 function App() {
     const [metadata, setMetadata] = useState<Metadata>()
+    const [playingTrack, setPlayingTrack] = useState<string | null>(null)
 
     useEffect(() => {
         fetch(window.location.origin + "/metadata.json").then(res => res.json()).then( (res: Metadata) =>
@@ -52,14 +58,15 @@ function App() {
 
   return (
     <MetadataContext.Provider value={metadata ?? null}>
-        <Artist></Artist>
-        <BrowserRouter>
-            <Routes>
-                <Route path={"/"} element={<Home/>}></Route>
-                <Route path={"/:currentAlbum"} element={<Album/>}></Route>
-                <Route path={"/:currentAlbum/:currentTrack"} element={<Album/>}></Route>
-            </Routes>
-        </BrowserRouter>
+        <PlayerContext.Provider value={{playingTrack, setPlayingTrack}}>
+            <BrowserRouter>
+                <Routes>
+                    <Route path={"/"} element={<Home/>}></Route>
+                    <Route path={"/:currentAlbum"} element={<Album/>}></Route>
+                    <Route path={"/:currentAlbum/:currentTrack"} element={<Album/>}></Route>
+                </Routes>
+            </BrowserRouter>
+        </PlayerContext.Provider>
     </MetadataContext.Provider>
   )
 }
