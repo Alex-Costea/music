@@ -39,16 +39,25 @@ export interface Coordinates{
     y : number
 }
 
+export interface Track {
+    url: string,
+    filename : string
+    number : number,
+    title: string,
+    folder : string,
+    numberDisplayed? : number
+}
+
 export interface PlayerData{
-    playingTrack : string | null
-    setPlayingTrack : (playingTrack : string | null) => void
+    trackList : Track[] | null
+    setTrackList : (playingTrack : Track[] | null) => void
     playerCoordinates : Coordinates | null
     setPlayerCoordinates : (coordinates : Coordinates) => void
 }
 
 function App() {
     const [metadata, setMetadata] = useState<Metadata>()
-    const [playingTrack, setPlayingTrack] = useState<string | null>(null)
+    const [trackList, setTrackList] = useState<Track[] | null>(null)
     const [playerCoordinates, setPlayerCoordinates] = useState<Coordinates | null>(null)
 
     useEffect(() => {
@@ -66,7 +75,7 @@ function App() {
 
   return (
     <MetadataContext.Provider value={metadata ?? null}>
-        <PlayerContext.Provider value={{playingTrack, setPlayingTrack, playerCoordinates, setPlayerCoordinates}}>
+        <PlayerContext.Provider value={{trackList, setTrackList, playerCoordinates, setPlayerCoordinates}}>
             <BrowserRouter>
                 <Routes>
                     <Route path={"/"} element={<Home/>}></Route>

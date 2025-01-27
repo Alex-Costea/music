@@ -6,15 +6,7 @@ import TrackElement from "../TrackElement/TrackElement.tsx";
 import AlbumInfo from "../AlbumInfo/AlbumInfo.tsx";
 import Artist from "../Artist/Artist.tsx";
 import Player from "../Player/Player.tsx";
-
-export interface Track {
-    url: string,
-    filename : string
-    number : number,
-    title: string,
-    folder : string,
-    numberDisplayed? : number
-}
+import {Track} from "../App/App.tsx";
 
 function initTrack(url : string, filename: string, number : number, title : string, folder: string
                    , numberDisplayed? : number)
@@ -73,7 +65,8 @@ function Album() {
                 {tracks.length > 0 && Array.from(
                     tracks.filter(id => currentTrack ? id.folder === currentTrack: true),
                     (track, i) =>
-                        <TrackElement key={i} track={track} album={album} isCurrentTrack={Boolean(currentTrack)}/>
+                        <TrackElement key={i} track={track} album={album} isCurrentTrack={Boolean(currentTrack)}
+                                      albumTracks={tracks}/>
                 )}
             </ol>
         </div>

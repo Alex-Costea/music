@@ -8,7 +8,7 @@ function Player()
 {
     const {pause, play, playing} = useGlobalAudioPlayer()
     const playerData = useContext(PlayerContext)!
-    const songPlaying = playerData.playingTrack
+    const trackList = playerData.trackList
     const coordinates = playerData.playerCoordinates
     const setCoordinates = playerData.setPlayerCoordinates
 
@@ -33,7 +33,7 @@ function Player()
                       >
         <div className={"player"}>
             <div className={"songPlaying"}>
-                {songPlaying ?? "Nothing is playing"}
+                {trackList ? trackList[0].title : "Nothing is playing"}
             </div>
             {!playing &&
                 <button onClick={onPlay} className={"controlButton need-interaction"}>

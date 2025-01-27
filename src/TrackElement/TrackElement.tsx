@@ -1,6 +1,5 @@
 import {Link} from "react-router-dom";
-import {Track} from "../Album/Album.tsx";
-import {AlbumMetadata} from "../App/App.tsx";
+import {AlbumMetadata, Track} from "../App/App.tsx";
 import { useGlobalAudioPlayer } from 'react-use-audio-player';
 import "./Track.css"
 import {useContext} from "react";
@@ -10,23 +9,40 @@ interface TrackProps{
     album? : AlbumMetadata
     track : Track
     isCurrentTrack : boolean
+    albumTracks : Track[]
 }
 
-function TrackElement({track, album, isCurrentTrack} : TrackProps)
+function TrackElement({track, album, isCurrentTrack, albumTracks} : TrackProps)
 {
     const playerData = useContext(PlayerContext)!
-    const playingTrack = playerData?.playingTrack
-    const setPlayingTrack = playerData?.setPlayingTrack
+    const trackList = playerData?.trackList
+    const setTrackList = playerData?.setTrackList
     const {load, play, playing} = useGlobalAudioPlayer()
 
+    function playTrack(currentTrack : Track, autoPlayNext : boolean)
+    {
+        let newTrackList = autoPlayNext ?
+            albumTracks?.filter((albumTrack) => albumTrack.number >= currentTrack.number) :
+            [currentTrack]
+        setTrackList(newTrackList)
+        load(currentTrack.url, {autoplay: true, onend : () => {
+            if(newTrackList?.length > 1)
+            {
+                newTrackList = newTrackList.slice(1)
+                setTrackList(newTrackList)
+                playTrack(newTrackList[0], true)
+            }
+        }})
+    }
+
     function onPlay() {
-        if(playingTrack !== track.folder)
+        if(!trackList || (trackList?.length > 0 && trackList[0].folder !== track.folder))
         {
-            setPlayingTrack(track.title)
-            load(track.url, {autoplay: true})
+            playTrack(track, !isCurrentTrack)
         }
-        else if(!playing)
+        else if(!playing) {
             play()
+        }
     }
 
     return <div className={"trackDiv"}>
@@ -35,7 +51,7 @@ function TrackElement({track, album, isCurrentTrack} : TrackProps)
                             <span className={"trackNr"}>
                                 {isCurrentTrack?'':`${track.numberDisplayed ?? track.number}. `}
                             </span>
-            <span onClick={onPlay} className={"trackTitle"} data-title-hidden={album?.titleHidden}>
+            <span onClick={onPlay} className={"trackTitle"} data-title-hidden={album?.titleHidden && !isCurrentTrack}>
                 {track.title}
             </span>
             <span className={"trackDivSpan"}>
