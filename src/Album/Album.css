@@ -14,7 +14,7 @@
 }
 
 .part1, .part2{
-    width: 70svmin;
+    min-width: 18em;
     flex: 1;
 }
 

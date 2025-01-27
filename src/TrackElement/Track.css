@@ -19,3 +19,7 @@ span{
 .trackDivSpan{
     position: relative;
 }
+
+.trackDivContents{
+    margin-right: 2em;
+}
