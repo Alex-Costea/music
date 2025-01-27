@@ -61,7 +61,7 @@ function Album() {
             ` }</style>
             }
             <AlbumInfo album={album}></AlbumInfo>
-            <ol className={"part2"}>
+            <ol className={"tracklistPanel"}>
                 {tracks.length > 0 && Array.from(
                     tracks.filter(id => currentTrack ? id.folder === currentTrack: true),
                     (track, i) =>

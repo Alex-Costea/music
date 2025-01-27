@@ -10,7 +10,7 @@ interface AlbumInfoProps {
 function AlbumInfo({album} : AlbumInfoProps)
 {
     const metadata = useContext(MetadataContext)
-    return <div className="part1">
+    return <div className="albumInfoPanel">
         <Link to={`/${album?.folder}`}>
             <img
                 className={`coverArt largeCoverArt ${album?.noBorderOnCover ? "no-border" : ""}`}

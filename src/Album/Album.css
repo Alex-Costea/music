@@ -10,16 +10,18 @@
 }
 
 .largeCoverArt{
-    width: 50svmin
+    width: 60%;
 }
 
-.part1, .part2{
+.albumInfoPanel{
     min-width: 25em;
     flex: 1;
+    margin-top: 5%;
 }
 
-.part1{
-    margin-top: 5%;
+.tracklistPanel{
+    min-width: 25em;
+    flex: 1;
 }
 
 li{
