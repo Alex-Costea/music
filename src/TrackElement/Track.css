@@ -1,9 +1,7 @@
-button{
-    border: none;
-    background: transparent;
-    font-size: x-large;
+span{
+    cursor: pointer;
 }
 
-.controls{
-    font-size: xx-small;
+.goToTrack{
+    padding-left: 0.7em;
 }

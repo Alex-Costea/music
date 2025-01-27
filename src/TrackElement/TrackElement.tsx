@@ -38,14 +38,16 @@ function TrackElement({track, album, isCurrentTrack} : TrackProps)
                             <span className={"trackNr"}>
                                 {isCurrentTrack?'':`${track.numberDisplayed ?? track.number}. `}
                             </span>
-            <Link to={`/${album?.folder}/${track.folder}`} data-title-hidden={album?.titleHidden}>
+            <span onClick={onPlay} className={"controlButton"} data-title-hidden={album?.titleHidden}>
                 {track.title}
-            </Link>
+            </span>
+            {
+                !isCurrentTrack &&
+                <Link to={`/${album?.folder}/${track.folder}`} className={"goToTrack"} >
+                    🡺
+                </Link>
+            }
         </h3></li>
-        <div className={"controls"}>
-            <button onClick={onPlay} className={"controlButton"}>▶︎</button>
-            <button onClick={onPause} className={"controlButton"}>⏸︎</button>
-        </div>
     </div>
 }
 
