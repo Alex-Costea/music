@@ -4,4 +4,18 @@ span{
 
 .goToTrack{
     padding-left: 0.7em;
+    display: inline-flex;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    margin: 0.1em;
+}
+
+.goToTrackArrow{
+    filter: drop-shadow( 0 0 10px rgba(0, 0, 0, 0.5));
+    height: 100%;
+}
+
+.trackDivSpan{
+    position: relative;
 }
