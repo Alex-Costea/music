@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 3em;
     right: 3em;
-    padding: 0.8em;
+    padding: 1em;
     border-radius: 1em;
     background: rgb(255, 255, 255, 50%);
 }
@@ -11,4 +11,6 @@
     background: none;
     border: none;
     cursor: pointer;
+    padding-left: 0;
+    margin: 0.5em;
 }
