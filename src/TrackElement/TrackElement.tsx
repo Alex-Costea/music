@@ -17,26 +17,27 @@ function TrackElement({track, album, isCurrentTrack, albumTracks} : TrackProps)
     const playerData = useContext(PlayerContext)!
     const trackList = playerData?.trackList
     const setTrackList = playerData?.setTrackList
+    const trackNr = playerData.trackNr
+    const setTrackNr = playerData.setTrackNr
     const {load, play, playing} = useGlobalAudioPlayer()
 
     function playTrack(currentTrack : Track, autoPlayNext : boolean)
     {
-        let newTrackList = autoPlayNext ?
-            albumTracks?.filter((albumTrack) => albumTrack.number >= currentTrack.number) :
-            [currentTrack]
+        const newTrackNr = currentTrack.number - 1
+        const newTrackList = autoPlayNext ? albumTracks : [currentTrack]
         setTrackList(newTrackList)
+        setTrackNr(newTrackNr)
         load(currentTrack.url, {autoplay: true, onend : () => {
-            if(newTrackList?.length > 1)
+            if(newTrackNr < newTrackList.length - 1)
             {
-                newTrackList = newTrackList.slice(1)
-                setTrackList(newTrackList)
-                playTrack(newTrackList[0], true)
+                const newTrack =newTrackList.filter((it) => it.number == newTrackNr + 2)[0]
+                playTrack(newTrack, true)
             }
         }})
     }
 
     function onPlay() {
-        if(!trackList || (trackList?.length > 0 && trackList[0].folder !== track.folder))
+        if(!trackList || (trackList?.length > 0 && trackList[trackNr].folder !== track.folder))
         {
             playTrack(track, !isCurrentTrack)
         }
