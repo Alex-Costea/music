@@ -5,6 +5,7 @@ import "./Album.css"
 import TrackElement from "../TrackElement/TrackElement.tsx";
 import AlbumInfo from "../AlbumInfo/AlbumInfo.tsx";
 import Artist from "../Artist/Artist.tsx";
+import Player from "../Player/Player.tsx";
 
 export interface Track {
     url: string,
@@ -76,6 +77,7 @@ function Album() {
                 )}
             </ol>
         </div>
+        <Player></Player>
     </MetadataContext.Provider>
 }
 

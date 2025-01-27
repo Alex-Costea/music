@@ -17,7 +17,7 @@ function TrackElement({track, album, isCurrentTrack} : TrackProps)
     const playerData = useContext(PlayerContext)!
     const playingTrack = playerData?.playingTrack
     const setPlayingTrack = playerData?.setPlayingTrack
-    const {load, pause, play, playing} = useGlobalAudioPlayer()
+    const {load, play, playing} = useGlobalAudioPlayer()
 
     function onPlay() {
         if(playingTrack !== track.folder)
@@ -27,10 +27,6 @@ function TrackElement({track, album, isCurrentTrack} : TrackProps)
         }
         else if(!playing)
             play()
-    }
-
-    function onPause() {
-        pause()
     }
 
     return <div className={"trackDiv"}>

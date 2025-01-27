@@ -34,14 +34,22 @@ export interface Metadata{
     artistName : string,
 }
 
+export interface Coordinates{
+    x : number
+    y : number
+}
+
 export interface PlayerData{
     playingTrack : string | null
     setPlayingTrack : (playingTrack : string | null) => void
+    playerCoordinates : Coordinates | null
+    setPlayerCoordinates : (coordinates : Coordinates) => void
 }
 
 function App() {
     const [metadata, setMetadata] = useState<Metadata>()
     const [playingTrack, setPlayingTrack] = useState<string | null>(null)
+    const [playerCoordinates, setPlayerCoordinates] = useState<Coordinates | null>(null)
 
     useEffect(() => {
         fetch(window.location.origin + "/metadata.json").then(res => res.json()).then( (res: Metadata) =>
@@ -58,7 +66,7 @@ function App() {
 
   return (
     <MetadataContext.Provider value={metadata ?? null}>
-        <PlayerContext.Provider value={{playingTrack, setPlayingTrack}}>
+        <PlayerContext.Provider value={{playingTrack, setPlayingTrack, playerCoordinates, setPlayerCoordinates}}>
             <BrowserRouter>
                 <Routes>
                     <Route path={"/"} element={<Home/>}></Route>
