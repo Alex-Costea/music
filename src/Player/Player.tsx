@@ -6,9 +6,10 @@ import {PlayerContext} from "../PlayerContext/PlayerContext.tsx";
 
 function Player()
 {
-    const {pause, play, playing} = useGlobalAudioPlayer()
+    const {pause, play, playing, isLoading} = useGlobalAudioPlayer()
     const playerData = useContext(PlayerContext)!
     const trackList = playerData.trackList
+    const trackNr = playerData.trackNr
     const coordinates = playerData.playerCoordinates
     const setCoordinates = playerData.setPlayerCoordinates
 
@@ -36,14 +37,19 @@ function Player()
                       >
         <div className={"player"}>
             <div className={"songPlaying"}>
-                {trackList ? trackList[0].title : "Nothing is playing"}
+                {trackList ? trackList[trackNr ?? 0].title : "Nothing is playing"}
             </div>
-            {!playing &&
+            {isLoading &&
+                <button className={"controlButton need-interaction"}>
+                    <svg fill="currentColor" width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"><animateTransform attributeName="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"/></path></svg>
+                </button>}
+
+            {!playing && !isLoading &&
                 <button onClick={onPlay} className={"controlButton need-interaction"}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                     className="bi bi-play-fill" viewBox="0 0 16 16">
-                    <path
-                        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                         className="bi bi-play-fill" viewBox="0 0 16 16">
+                        <path
+                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
                 </svg>
             </button>
             }
