@@ -22,7 +22,7 @@ function TrackElement({track, album, isCurrentTrack} : TrackProps)
     function onPlay() {
         if(playingTrack !== track.folder)
         {
-            setPlayingTrack(track.folder)
+            setPlayingTrack(track.title)
             load(track.url, {autoplay: true})
         }
         else if(!playing)
@@ -35,7 +35,7 @@ function TrackElement({track, album, isCurrentTrack} : TrackProps)
                             <span className={"trackNr"}>
                                 {isCurrentTrack?'':`${track.numberDisplayed ?? track.number}. `}
                             </span>
-            <span onClick={onPlay} className={"controlButton"} data-title-hidden={album?.titleHidden}>
+            <span onClick={onPlay} className={"trackTitle"} data-title-hidden={album?.titleHidden}>
                 {track.title}
             </span>
             <span className={"trackDivSpan"}>

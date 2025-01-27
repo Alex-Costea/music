@@ -6,19 +6,19 @@
     border-radius: 1em;
     background: rgb(255, 255, 255, 50%);
     cursor: move;
+    max-width: 10em;
 }
 
 .controlButton{
     background: none;
     border: none;
     cursor: pointer;
-    padding-left: 0;
+    padding: 0;
     margin: 0.5em;
 }
 
-@media (pointer: coarse)
-{
-    .player{
-        padding: 2em;
-    }
+.songPlaying{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
