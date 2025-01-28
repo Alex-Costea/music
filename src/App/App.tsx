@@ -67,7 +67,7 @@ function App() {
                 return dateB - dateA;
             })
             setMetadata(res)
-            document.title = `${res.artistName}`
+            document.title = `${res.artistName} music`
 
             for(const album of res.albums)
             {
