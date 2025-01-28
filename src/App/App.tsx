@@ -38,7 +38,7 @@ export interface Track {
     title: string,
     folder : string,
     numberDisplayed? : number
-    track : number,
+    number : number,
     trackDisplayed? : number
     featuring : string
 }
@@ -68,8 +68,19 @@ function App() {
             })
             setMetadata(res)
             document.title = `${res.artistName}`
+
+            for(const album of res.albums)
+            {
+                for(const track of album.tracks)
+                {
+                    track.filename = `${album.folder}${track.number}`
+                    track.url = `${metadata?.cdnLink}/mp3/${album.folder}/${track.filename}.mp3`
+                }
+                album.tracks = album.tracks.sort((a,b) => a.number - b.number)
+            }
+
         })
-    }, [])
+    }, [metadata?.cdnLink])
 
   return (
     <MetadataContext.Provider value={metadata ?? null}>
