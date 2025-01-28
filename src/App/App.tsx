@@ -54,7 +54,7 @@ export interface PlayerData{
     trackNr : number
     setTrackNr : (nr : number) => void
     playerCoordinates : Coordinates | null
-    setPlayerCoordinates : (coordinates : Coordinates) => void
+    setPlayerCoordinates : (coordinates : Coordinates | null) => void
 }
 
 function App() {
