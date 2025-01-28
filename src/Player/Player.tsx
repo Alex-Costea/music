@@ -31,15 +31,15 @@ function Player()
         setCoordinates({x : data.x, y : data.y})
     }
 
-    if(!trackList)
-        return null
-
     function closePlayer() {
         stop()
         setTrackList(null)
         setTrackNr(0)
         setCoordinates(null)
     }
+
+    if(!trackList)
+        return null
 
     return <Draggable bounds={"html"}
                       defaultPosition={coordinates ?? undefined}
@@ -49,7 +49,7 @@ function Player()
                       >
         <div className={"player"} ref={nodeRef}>
             <div className={"songPlaying"}>
-                {trackList ? trackList[trackNr ?? 0].title : "Nothing is playing"}
+                {trackList.length > 0 ? trackList[trackNr ?? 0].title : "Nothing is playing"}
             </div>
             {isLoading &&
                 <button className={"controlButton need-interaction"}>

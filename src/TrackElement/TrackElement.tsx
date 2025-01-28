@@ -23,7 +23,7 @@ function TrackElement({track, album, isCurrentTrack, albumTracks} : TrackProps)
 
     function playTrack(currentTrack : Track, autoPlayNext : boolean)
     {
-        const newTrackNr = Number(currentTrack.number) - 1
+        const newTrackNr = autoPlayNext ? Number(currentTrack.number) - 1 : 0
         const newTrackList = autoPlayNext ? albumTracks : [currentTrack]
         setTrackList(newTrackList)
         setTrackNr(newTrackNr)
