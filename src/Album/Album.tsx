@@ -8,16 +8,17 @@ import Artist from "../Artist/Artist.tsx";
 import Player from "../Player/Player.tsx";
 import {Track} from "../App/App.tsx";
 
-function initTrack(url : string, filename: string, number : number, title : string, folder: string
-                   , numberDisplayed? : number)
+function initTrack(url: string, filename: string, number: number, title: string, folder: string
+    , featuring : string, numberDisplayed: number | undefined)
 {
     return {
         filename : filename,
         url: url,
-        number : number,
+        track : number,
         title: title,
         folder : folder,
-        numberDisplayed : numberDisplayed
+        numberDisplayed : numberDisplayed,
+        featuring : featuring
     } as Track
 }
 
@@ -39,9 +40,10 @@ function Album() {
                 const trackURL = `${metadata?.cdnLink}/mp3/${currentAlbum}/${fileName}.mp3`
                 const track = tracksMetadata.filter(track =>
                     track.track.toString() === (i+1).toString())[0]
-                newTracks.push(initTrack(trackURL, fileName, i+1, track.title, track.folder, track.trackDisplayed))
+                newTracks.push(initTrack(trackURL, fileName, i + 1,
+                    track.title, track.folder, track.featuring, track.trackDisplayed))
             })
-            newTracks = newTracks.sort((a,b) => a.number - b.number)
+            newTracks = newTracks.sort((a,b) => Number(a.track - b.track))
             setTracks(newTracks)
         }
     }, [album?.nrTracks, currentAlbum, metadata, currentTrack, tracks])

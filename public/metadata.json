@@ -55,8 +55,9 @@
         },
         {
           "track": 4,
-          "title": "ChPILOT (ft. Havia Nix)",
-          "folder": "chpilot"
+          "title": "ChPILOT",
+          "folder": "chpilot",
+          "featuring": "Havia Nix"
         },
         {
           "track": 5,
@@ -243,8 +244,9 @@
         },
         {
           "track": 5,
-          "title": "Abacaxi (ft. Havia Nix)",
-          "folder": "abacaxi"
+          "title": "Abacaxi",
+          "folder": "abacaxi",
+          "featuring": "Havia Nix"
         },
         {
           "track": 6,
@@ -267,9 +269,10 @@
       "tracks": [
         {
           "track": 1,
-          "title": "Geo: Nazar Lag Gayi (ft. Parr)",
+          "title": "Geo: Nazar Lag Gayi",
           "folder": "semarc",
-          "trackDisplayed": 6
+          "trackDisplayed": 6,
+          "featuring": "Parr"
         },
         {
           "track": 2,
@@ -316,8 +319,9 @@
         },
         {
           "track": 3,
-          "title": "Session Wave (ft. Havia Nix)",
-          "folder": "session-wave"
+          "title": "Session Wave",
+          "folder": "session-wave",
+          "featuring": "Havia Nix"
         },
         {
           "track": 4,

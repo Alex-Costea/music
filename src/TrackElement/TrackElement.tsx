@@ -23,14 +23,14 @@ function TrackElement({track, album, isCurrentTrack, albumTracks} : TrackProps)
 
     function playTrack(currentTrack : Track, autoPlayNext : boolean)
     {
-        const newTrackNr = currentTrack.number - 1
+        const newTrackNr = Number(currentTrack.track) - 1
         const newTrackList = autoPlayNext ? albumTracks : [currentTrack]
         setTrackList(newTrackList)
         setTrackNr(newTrackNr)
         load(currentTrack.url, {autoplay: true, onend : () => {
             if(newTrackNr < newTrackList.length - 1)
             {
-                const newTrack =newTrackList.filter((it) => it.number == newTrackNr + 2)[0]
+                const newTrack =newTrackList.filter((it) => it.track == newTrackNr + 2)[0]
                 playTrack(newTrack, true)
             }
         }})
@@ -50,10 +50,10 @@ function TrackElement({track, album, isCurrentTrack, albumTracks} : TrackProps)
         <li>
             <h3 className={"trackDivContents"}>
                             <span className={"trackNr"}>
-                                {isCurrentTrack?'':`${track.numberDisplayed ?? track.number}. `}
+                                {isCurrentTrack?'':`${track.numberDisplayed ?? track.track}. `}
                             </span>
             <span onClick={onPlay} className={"trackTitle"} data-title-hidden={album?.titleHidden && !isCurrentTrack}>
-                {track.title}
+                {track.title + (track.featuring ? ` (ft. ${track.featuring})` : '')}
             </span>
             <span className={"trackDivSpan"}>
                 {

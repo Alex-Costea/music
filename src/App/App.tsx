@@ -7,13 +7,6 @@ import Album from "../Album/Album.tsx";
 import { MetadataContext } from '../MetadataContext/MetadataContext.tsx';
 import {PlayerContext} from "../PlayerContext/PlayerContext.tsx";
 
-export interface TrackMetadata {
-    track : bigint,
-    title: string,
-    folder : string,
-    trackDisplayed? : number
-}
-
 export interface AlbumMetadata {
     title : string
     date: string
@@ -24,8 +17,8 @@ export interface AlbumMetadata {
     specialBackground? : boolean
     hideTitleOnPage? : boolean
     noBorderOnCover? : boolean
-    nrTracks : bigint
-    tracks : TrackMetadata[]
+    nrTracks : number
+    tracks : Track[]
 }
 
 export interface Metadata{
@@ -42,10 +35,12 @@ export interface Coordinates{
 export interface Track {
     url: string,
     filename : string
-    number : number,
     title: string,
     folder : string,
     numberDisplayed? : number
+    track : number,
+    trackDisplayed? : number
+    featuring : string
 }
 
 export interface PlayerData{
