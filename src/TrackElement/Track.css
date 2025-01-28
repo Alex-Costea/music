@@ -3,7 +3,7 @@ span{
 }
 
 .goToTrack{
-    padding-left: 0.7em;
+    padding-left: 0.5em;
     display: inline-flex;
     top: 0;
     bottom: 0;
@@ -23,4 +23,13 @@ span{
 .trackDivContents{
     margin-right: 2em;
     margin-left: 2em;
+}
+
+.trackTitle{
+    position: relative;
+}
+
+.trackNr{
+    position: absolute;
+    transform: translateX(-150%);
 }
