@@ -14,13 +14,13 @@
 }
 
 .albumInfoPanel{
-    min-width: 30em;
+    min-width: calc(min(30em, 100svw));
     flex: 1;
     margin-top: 5%;
 }
 
 .tracklistPanel{
-    min-width: 25em;
+    min-width: calc(min(30em, 100svw));
     flex: 1;
 }
 
