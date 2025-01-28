@@ -20,7 +20,7 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    row-gap: 3svh;
+    row-gap: 4svh;
 }
 
 .subtitle{
@@ -28,7 +28,7 @@
 }
 
 .coverArt{
-    width: 75%;
+    width: 70%;
     border-radius: 5px;
 }
 
