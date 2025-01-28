@@ -10,22 +10,22 @@
       "nrTracks": 4,
       "tracks": [
         {
-          "track": 1,
+          "number": 1,
           "title": "Turn Ball",
           "folder": "turn-ball"
         },
         {
-          "track": 2,
+          "number": 2,
           "title": "Okay",
           "folder": "ok1"
         },
         {
-          "track": 3,
+          "number": 3,
           "title": "A Song I Made",
           "folder": "sicksong"
         },
         {
-          "track": 4,
+          "number": 4,
           "title": "Our Future",
           "folder": "our-future"
         }
@@ -39,52 +39,53 @@
       "nrTracks": 10,
       "tracks": [
         {
-          "track": 1,
+          "number": 1,
           "title": "little mouse",
           "folder": "little-mouse"
         },
         {
-          "track": 2,
+          "number": 2,
           "title": "slf / huh",
           "folder": "slf-huh"
         },
         {
-          "track": 3,
+          "number": 3,
           "title": "ok2",
           "folder": "ok2"
         },
         {
-          "track": 4,
-          "title": "ChPILOT (ft. Havia Nix)",
-          "folder": "chpilot"
+          "number": 4,
+          "title": "ChPILOT",
+          "folder": "chpilot",
+          "featuring": "Havia Nix"
         },
         {
-          "track": 5,
+          "number": 5,
           "title": "kkkkk9",
           "folder": "kkkkk9"
         },
         {
-          "track": 6,
+          "number": 6,
           "title": "train2",
           "folder": "train2"
         },
         {
-          "track": 7,
+          "number": 7,
           "title": "ant, pt. 3",
           "folder": "t"
         },
         {
-          "track": 8,
+          "number": 8,
           "title": "ânceput",
           "folder": "anceput"
         },
         {
-          "track": 9,
+          "number": 9,
           "title": "unstruct",
           "folder": "isdesign"
         },
         {
-          "track": 10,
+          "number": 10,
           "title": "w",
           "folder": "w"
         }
@@ -98,47 +99,47 @@
       "nrTracks": 9,
       "tracks": [
         {
-          "track": 1,
+          "number": 1,
           "title": "Abstract",
           "folder": "abstract"
         },
         {
-          "track": 2,
+          "number": 2,
           "title": "Genus",
           "folder": "genus"
         },
         {
-          "track": 3,
+          "number": 3,
           "title": "Tri",
           "folder": "3"
         },
         {
-          "track": 4,
+          "number": 4,
           "title": "Said Words",
           "folder": "said-words"
         },
         {
-          "track": 5,
+          "number": 5,
           "title": "Lowered",
           "folder": "lowered"
         },
         {
-          "track": 6,
+          "number": 6,
           "title": "Außer",
           "folder": "ausser"
         },
         {
-          "track": 7,
+          "number": 7,
           "title": "Thematic",
           "folder": "thematic"
         },
         {
-          "track": 8,
+          "number": 8,
           "title": "λx.x",
           "folder": "lambda"
         },
         {
-          "track": 9,
+          "number": 9,
           "title": "And I Seem...",
           "folder": "and-i-seem"
         }
@@ -152,62 +153,62 @@
       "nrTracks": 12,
       "tracks": [
         {
-          "track": 1,
+          "number": 1,
           "title": "(forthecrown)",
           "folder": "prevolution"
         },
         {
-          "track": 2,
+          "number": 2,
           "title": "(miracleflower)",
           "folder": "chewedcoin"
         },
         {
-          "track": 3,
+          "number": 3,
           "title": "(adays)",
           "folder": "adays"
         },
         {
-          "track": 4,
+          "number": 4,
           "title": "(mami)",
           "folder": "mami"
         },
         {
-          "track": 5,
+          "number": 5,
           "title": "(munkiki)",
           "folder": "munkiki"
         },
         {
-          "track": 6,
+          "number": 6,
           "title": "(pandemos)",
           "folder": "pedantic"
         },
         {
-          "track": 7,
+          "number": 7,
           "title": "(phebomai)",
           "folder": "phi"
         },
         {
-          "track": 8,
+          "number": 8,
           "title": "(ring)",
           "folder": "ring"
         },
         {
-          "track": 9,
+          "number": 9,
           "title": "(derkaz)",
           "folder": "derkaz"
         },
         {
-          "track": 10,
+          "number": 10,
           "title": "(saviourcorn)",
           "folder": "saviorcorn"
         },
         {
-          "track": 11,
+          "number": 11,
           "title": "(breakice)",
           "folder": "newice"
         },
         {
-          "track": 12,
+          "number": 12,
           "title": "(exit)",
           "folder": "exit"
         }
@@ -222,37 +223,38 @@
       "nrTracks": 7,
       "tracks": [
         {
-          "track": 1,
+          "number": 1,
           "title": "Dead Summer",
           "folder": "prazno-vreme"
         },
         {
-          "track": 2,
+          "number": 2,
           "title": "Moonsign",
           "folder": "moonsign"
         },
         {
-          "track": 3,
+          "number": 3,
           "title": "Kaymak",
           "folder": "kaymak"
         },
         {
-          "track": 4,
+          "number": 4,
           "title": "San Kenz",
           "folder": "115-vennkatillion"
         },
         {
-          "track": 5,
-          "title": "Abacaxi (ft. Havia Nix)",
-          "folder": "abacaxi"
+          "number": 5,
+          "title": "Abacaxi",
+          "folder": "abacaxi",
+          "featuring": "Havia Nix"
         },
         {
-          "track": 6,
+          "number": 6,
           "title": "Can't Hide In Bucharest",
           "folder": "zero-secunde"
         },
         {
-          "track": 7,
+          "number": 7,
           "title": "So Long",
           "folder": "so-long"
         }
@@ -266,31 +268,32 @@
       "nrTracks": 5,
       "tracks": [
         {
-          "track": 1,
-          "title": "Geo: Nazar Lag Gayi (ft. Parr)",
+          "number": 1,
+          "title": "Geo: Nazar Lag Gayi",
           "folder": "semarc",
-          "trackDisplayed": 6
+          "trackDisplayed": 6,
+          "featuring": "Parr"
         },
         {
-          "track": 2,
+          "number": 2,
           "title": "Hydro: Bogdaproste",
           "folder": "drought",
           "trackDisplayed": 20
         },
         {
-          "track": 3,
+          "number": 3,
           "title": "Aero: It's Like Sky Diving",
           "folder": "sky-diving",
           "trackDisplayed": 8
         },
         {
-          "track": 4,
+          "number": 4,
           "title": "Pyro: Fire FM 67.6",
           "folder": "fire-fm",
           "trackDisplayed": 4
         },
         {
-          "track": 5,
+          "number": 5,
           "title": "Quinta: False Vacuum Decay",
           "folder": "false-vacuum-decay",
           "trackDisplayed": 12
@@ -305,22 +308,23 @@
       "nrTracks": 4,
       "tracks": [
         {
-          "track": 1,
+          "number": 1,
           "title": "Flatwoods",
           "folder": "kisikillillake"
         },
         {
-          "track": 2,
+          "number": 2,
           "title": "the screech owl also shall rest there, and find for herself a place of rest.",
           "folder": "qippoz"
         },
         {
-          "track": 3,
-          "title": "Session Wave (ft. Havia Nix)",
-          "folder": "session-wave"
+          "number": 3,
+          "title": "Session Wave",
+          "folder": "session-wave",
+          "featuring": "Havia Nix"
         },
         {
-          "track": 4,
+          "number": 4,
           "title": "Fear In Your Favorite Music",
           "folder": "fiyfm"
         }
@@ -338,22 +342,22 @@
       "noBorderOnCover": true,
       "tracks": [
         {
-          "track": 1,
+          "number": 1,
           "title": "Axolotlatl",
           "folder": "axolotlatl"
         },
         {
-          "track": 2,
+          "number": 2,
           "title": "Pace Era",
           "folder": "pace-era"
         },
         {
-          "track": 3,
+          "number": 3,
           "title": "label20user interface) A non,the purpose of another control.",
           "folder": "martsara"
         },
         {
-          "track": 4,
+          "number": 4,
           "title": "It's Finished And I Need To Ascend",
           "folder": "finality"
         }
