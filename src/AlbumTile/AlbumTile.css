@@ -1,5 +1,5 @@
 .albumTile{
-    width: 300px;
+    width: 36svh;
     font-size: 0.7em;
 }
 
@@ -20,7 +20,7 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    row-gap: 5svh;
+    row-gap: 3svh;
 }
 
 .subtitle{
@@ -28,7 +28,7 @@
 }
 
 .coverArt{
-    width: 220px;
+    width: 75%;
     border-radius: 5px;
 }
 
