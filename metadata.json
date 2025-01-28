@@ -271,32 +271,32 @@
           "number": 1,
           "title": "Geo: Nazar Lag Gayi",
           "folder": "semarc",
-          "trackDisplayed": 6,
+          "numberDisplayed": 6,
           "featuring": "Parr"
         },
         {
           "number": 2,
           "title": "Hydro: Bogdaproste",
           "folder": "drought",
-          "trackDisplayed": 20
+          "numberDisplayed": 20
         },
         {
           "number": 3,
           "title": "Aero: It's Like Sky Diving",
           "folder": "sky-diving",
-          "trackDisplayed": 8
+          "numberDisplayed": 8
         },
         {
           "number": 4,
           "title": "Pyro: Fire FM 67.6",
           "folder": "fire-fm",
-          "trackDisplayed": 4
+          "numberDisplayed": 4
         },
         {
           "number": 5,
           "title": "Quinta: False Vacuum Decay",
           "folder": "false-vacuum-decay",
-          "trackDisplayed": 12
+          "numberDisplayed": 12
         }
       ]
     },
