@@ -8,6 +8,7 @@
       "folder" : "our-future",
       "subtitle": "Departure: Southern Station.",
       "nrTracks": 4,
+      "hidden": true,
       "tracks": [
         {
           "number": 1,
@@ -301,36 +302,6 @@
       ]
     },
     {
-      "title": "K.S.L.L.K.",
-      "date": "2022-10-05",
-      "folder" : "ksllk",
-      "subtitle": "Ode to Lilith.",
-      "nrTracks": 4,
-      "tracks": [
-        {
-          "number": 1,
-          "title": "Flatwoods",
-          "folder": "kisikillillake"
-        },
-        {
-          "number": 2,
-          "title": "the screech owl also shall rest there, and find for herself a place of rest.",
-          "folder": "qippoz"
-        },
-        {
-          "number": 3,
-          "title": "Session Wave",
-          "folder": "session-wave",
-          "featuring": "Havia Nix"
-        },
-        {
-          "number": 4,
-          "title": "Fear In Your Favorite Music",
-          "folder": "fiyfm"
-        }
-      ]
-    },
-    {
       "title": "No Sound Is Too Trivial To Ignore",
       "date": "2023-11-22",
       "folder" : "no-sound",
@@ -358,6 +329,17 @@
         },
         {
           "number": 4,
+          "title": "Session Wave",
+          "folder": "session-wave",
+          "featuring": "Havia Nix"
+        },
+        {
+          "number": 5,
+          "title": "Flatwoods",
+          "folder": "ksllk"
+        },
+        {
+          "number": 6,
           "title": "It's Finished And I Need To Ascend",
           "folder": "finality"
         }
