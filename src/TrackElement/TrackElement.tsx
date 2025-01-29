@@ -52,11 +52,11 @@ function TrackElement({track, album, isCurrentTrack, albumTracks} : TrackProps)
         }
         <li>
             <h3 className={"trackDivContents"}>
-                <span onClick={onPlay} className={"trackTitle"} data-title-hidden={album?.titleHidden && !isCurrentTrack}>
+                <span onClick={onPlay} className={"trackTitle"}>
                     <span className={"trackNr"}>
                         {isCurrentTrack?'':`${track.numberDisplayed ?? track.number}. `}
                     </span>
-                    <span>
+                    <span data-title-hidden={album?.titleHidden && !isCurrentTrack}>
                         {track.title + (track.featuring ? ` (ft. ${track.featuring})` : '')}
                     </span>
                 </span>
