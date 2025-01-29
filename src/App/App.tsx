@@ -41,7 +41,9 @@ export interface Track {
     numberDisplayed? : number
     number : number,
     trackDisplayed? : number
-    featuring : string
+    featuring : string,
+    overtitle? : string
+    break? : boolean
 }
 
 export interface PlayerData{

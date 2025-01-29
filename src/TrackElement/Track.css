@@ -33,3 +33,7 @@ span{
     position: absolute;
     transform: translateX(-150%);
 }
+
+.break{
+    padding-bottom: 1em;
+}

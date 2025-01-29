@@ -315,7 +315,8 @@
         {
           "number": 1,
           "title": "Axolotlatl",
-          "folder": "axolotlatl"
+          "folder": "another-way",
+          "overtitle": "Part 1: Grid To The Remove"
         },
         {
           "number": 2,
@@ -325,13 +326,15 @@
         {
           "number": 3,
           "title": "label20user interface) A non,the purpose of another control.",
-          "folder": "martsara"
+          "folder": "martsara",
+          "break": true
         },
         {
           "number": 4,
           "title": "Session Wave",
           "folder": "session-wave",
-          "featuring": "Havia Nix"
+          "featuring": "Havia Nix",
+          "overtitle": "Part 2: K.S.L.L.K."
         },
         {
           "number": 5,
