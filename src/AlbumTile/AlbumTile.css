@@ -43,6 +43,8 @@
 
 *[data-title-hidden="true"]:focus,
 *[data-title-hidden="true"]:active,
-*[data-title-hidden="true"]::selection{
+*[data-title-hidden="true"]::selection,
+*[data-title-hidden="true"] *::selection
+{
     color: white;
 }

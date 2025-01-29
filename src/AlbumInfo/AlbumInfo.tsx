@@ -19,11 +19,13 @@ function AlbumInfo({album} : AlbumInfoProps)
                     `${metadata?.cdnLink}/mp3/${album?.folder}/` +
                     ( album?.specialBackground? "cover-album-page.webp" : "cover-small.webp")
                 } />
-            {
-                !(album?.hideTitleOnPage ) &&
-                <h2 className={"albumName"} data-title-hidden={album?.titleHidden}>{album?.title}</h2>
-            }
-            <h3 className={"subtitle"} data-title-hidden={album?.titleHidden}>{album?.subtitle}</h3>
+            <div data-title-hidden={album?.titleHidden}>
+                {
+                    !(album?.hideTitleOnPage) &&
+                        <h2 className={"albumName"}>{album?.title}</h2>
+                }
+                <h3 className={"subtitle"}>{album?.subtitle}</h3>
+            </div>
         </Link>
     </div>
 }
