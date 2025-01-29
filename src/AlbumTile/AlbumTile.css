@@ -20,7 +20,7 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    row-gap: 3svh;
+    row-gap: 2svh;
     column-gap: 7svw;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .coverArt{
-    width: 75%;
+    width: 72%;
     border-radius: 5px;
 }
 
