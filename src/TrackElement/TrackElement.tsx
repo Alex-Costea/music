@@ -71,7 +71,7 @@ function TrackElement({track, album, isCurrentTrack, albumTracks} : TrackProps)
                     }
                 </span>
             </h3>
-            {track.break && <div className={"break"}></div>}
+            {track.break && !isCurrentTrack && <div className={"break"}></div>}
         </li>
     </div>
 }
