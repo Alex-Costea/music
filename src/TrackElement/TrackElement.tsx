@@ -48,7 +48,8 @@ function TrackElement({track, album, isCurrentTrack, albumTracks} : TrackProps)
 
     return <div className={"trackDiv"}>
         {
-            track.overtitle && !isCurrentTrack &&  <h2 className={"trackTitle overtitle"}>{track.overtitle}</h2>
+            track.overtitle && !isCurrentTrack &&
+            <h2 className={"trackTitle overtitle"} onClick={onPlay}>{track.overtitle}</h2>
         }
         <li>
             <h3 className={"trackDivContents"}>
@@ -56,7 +57,7 @@ function TrackElement({track, album, isCurrentTrack, albumTracks} : TrackProps)
                     <span className={"trackNr"}>
                         {isCurrentTrack?'':`${track.numberDisplayed ?? track.number}. `}
                     </span>
-                    <span data-title-hidden={album?.titleHidden && !isCurrentTrack}>
+                    <span className={"innerTrackTitle"} data-title-hidden={album?.titleHidden && !isCurrentTrack}>
                         {track.title + (track.featuring ? ` (ft. ${track.featuring})` : '')}
                     </span>
                 </span>

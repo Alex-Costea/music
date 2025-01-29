@@ -1,4 +1,4 @@
-span{
+.innerTrackTitle, .trackDivSpan, .overtitle{
     cursor: pointer;
 }
 
