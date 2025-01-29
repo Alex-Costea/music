@@ -37,8 +37,11 @@
     box-shadow: rgba(240, 46, 170, 0.4) 0 0 50px;
 }
 
-*[data-title-hidden="true"]{
+*[data-title-hidden="true"],
+*[data-title-hidden="true"] > .albumName,
+*[data-title-hidden="true"] > .subtitle{
     color: rgba(255,255,255,0);
+    text-shadow: none;
 }
 
 *[data-title-hidden="true"]:focus,
