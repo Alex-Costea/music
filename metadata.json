@@ -102,7 +102,8 @@
         {
           "number": 1,
           "title": "Abstract",
-          "folder": "abstract"
+          "folder": "abstract",
+          "overtitle": "STRUCTURE SEND"
         },
         {
           "number": 2,
@@ -112,12 +113,14 @@
         {
           "number": 3,
           "title": "Tri",
-          "folder": "3"
+          "folder": "3",
+          "break": true
         },
         {
           "number": 4,
           "title": "Said Words",
-          "folder": "said-words"
+          "folder": "said-words",
+          "overtitle": "STRUCTURES END"
         },
         {
           "number": 5,
@@ -132,12 +135,14 @@
         {
           "number": 7,
           "title": "Thematic",
-          "folder": "thematic"
+          "folder": "thematic",
+          "break": true
         },
         {
           "number": 8,
           "title": "λx.x",
-          "folder": "lambda"
+          "folder": "lambda",
+          "overtitle": "STRUCTURESEND"
         },
         {
           "number": 9,
