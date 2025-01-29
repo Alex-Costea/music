@@ -18,6 +18,7 @@ export interface AlbumMetadata {
     hideTitleOnPage? : boolean
     noBorderOnCover? : boolean
     nrTracks : number
+    hidden? : boolean
     tracks : Track[]
 }
 

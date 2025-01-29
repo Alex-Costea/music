@@ -9,8 +9,8 @@ function Home() {
     return <>
         <Artist></Artist>
         <div className="tiles">
-            {metadata?.albums && Array.from(metadata?.albums, (album) =>
-                (
+            {metadata?.albums && Array.from(metadata?.albums.filter((it) => !it.hidden),
+                (album) => (
                     <AlbumTile
                         name={album.title}
                         key={album.folder}
