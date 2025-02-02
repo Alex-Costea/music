@@ -7,7 +7,6 @@
       "date": "2013-05-17",
       "folder" : "our-future",
       "subtitle": "Departure: Southern Station.",
-      "nrTracks": 4,
       "hidden": true,
       "tracks": [
         {
@@ -37,7 +36,6 @@
       "date": "2018-06-29",
       "folder" : "kerekrz",
       "subtitle": "Lost control.",
-      "nrTracks": 2,
       "hidden": true,
       "tracks": [
         {
@@ -57,7 +55,6 @@
       "date": "2018-09-28",
       "folder" : "nceput",
       "subtitle": "Citrus × limon.",
-      "nrTracks": 10,
       "tracks": [
         {
           "number": 1,
@@ -117,7 +114,8 @@
       "date": "2019-05-18",
       "folder" : "voies-sporen",
       "subtitle": "The artificial is more authentic than the real could ever be.",
-      "nrTracks": 9,
+      "specialBackground": true,
+      "noBorderOnCover": true,
       "tracks": [
         {
           "number": 1,
@@ -176,7 +174,6 @@
       "date": "2020-04-25",
       "folder" : "antiphony",
       "subtitle": "it's not the time for symphonies.",
-      "nrTracks": 12,
       "tracks": [
         {
           "number": 1,
@@ -246,7 +243,6 @@
       "date": "2021-03-19",
       "folder" : "wen-kintry",
       "subtitle": "Where are the two lost voices, now the night is about to pass.",
-      "nrTracks": 7,
       "tracks": [
         {
           "number": 1,
@@ -291,7 +287,6 @@
       "date": "2021-08-20",
       "folder" : "prophony",
       "subtitle": "SIDE B.",
-      "nrTracks": 8,
       "hidden": true,
       "tracks": [
         {
@@ -341,7 +336,6 @@
       "date": "2021-10-26",
       "folder" : "inf",
       "subtitle": "I just wanna feel the same.",
-      "nrTracks": 8,
       "hidden": true,
       "tracks": [
         {
@@ -391,7 +385,6 @@
       "date": "2022-02-22",
       "folder" : "essentia",
       "subtitle": "Că frumos mai cântă muzica.",
-      "nrTracks": 5,
       "tracks": [
         {
           "number": 1,
@@ -431,7 +424,6 @@
       "date": "2022-10-05",
       "folder" : "fiyfm",
       "subtitle": "Ode to Lilith.",
-      "nrTracks": 2,
       "hidden": true,
       "tracks": [
         {
@@ -451,7 +443,6 @@
       "date": "2023-11-22",
       "folder" : "no-sound",
       "subtitle": "Future breeze.",
-      "nrTracks": 4,
       "specialCover": true,
       "specialBackground": true,
       "hideTitleOnPage": true,
