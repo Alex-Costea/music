@@ -267,6 +267,106 @@
       ]
     },
     {
+      "title": "PROPHONY",
+      "date": "2021-08-20",
+      "folder" : "prophony",
+      "subtitle": "SIDE B.",
+      "nrTracks": 8,
+      "hidden": true,
+      "tracks": [
+        {
+          "number": 1,
+          "title": "CONCRETE",
+          "folder": "concrete"
+        },
+        {
+          "number": 2,
+          "title": "DIAMOND",
+          "folder": "diamond"
+        },
+        {
+          "number": 3,
+          "title": "SAFARI",
+          "folder": "safari"
+        },
+        {
+          "number": 4,
+          "title": "DOCTORS",
+          "folder": "doctors"
+        },
+        {
+          "number": 5,
+          "title": "LIES",
+          "folder": "lies"
+        },
+        {
+          "number": 6,
+          "title": "PENGUINS",
+          "folder": "penguins"
+        },
+        {
+          "number": 7,
+          "title": "LORD",
+          "folder": "lord"
+        },
+        {
+          "number": 8,
+          "title": "SLIDE",
+          "folder": "slide"
+        }
+      ]
+    },
+    {
+      "title": "2∞9",
+      "date": "2021-10-26",
+      "folder" : "inf",
+      "subtitle": "I just wanna feel the same.",
+      "nrTracks": 8,
+      "hidden": true,
+      "tracks": [
+        {
+          "number": 1,
+          "title": "Se Thelo",
+          "folder": "se-thelo"
+        },
+        {
+          "number": 2,
+          "title": "Nights & Days",
+          "folder": "nights-days"
+        },
+        {
+          "number": 3,
+          "title": "Roses On Fire",
+          "folder": "roses-on-fire"
+        },
+        {
+          "number": 4,
+          "title": "Desire",
+          "folder": "desire"
+        },
+        {
+          "number": 5,
+          "title": "On & On",
+          "folder": "on-on"
+        },
+        {
+          "number": 6,
+          "title": "Speed Of Sound",
+          "folder": "speed-of-sound"
+        },
+        {
+          "number": 7,
+          "title": "Muleina",
+          "folder": "muleina"
+        },
+        {
+          "number": 8,
+          "title": "Don't Let The Music Die",
+          "folder": "dont-let-the-music-die"
+        }
+      ]
+    },
+    {
       "title": "Essentia: As The Music Resounds",
       "date": "2022-02-22",
       "folder" : "essentia",
@@ -307,6 +407,26 @@
       ]
     },
     {
+      "title": "Fear In Your Favorite Music",
+      "date": "2022-10-05",
+      "folder" : "fiyfm",
+      "subtitle": "Ode to Lilith.",
+      "nrTracks": 2,
+      "hidden": true,
+      "tracks": [
+        {
+          "number": 1,
+          "title": "Fear In Your Favorite Music",
+          "folder": "fiyfm"
+        },
+        {
+          "number": 2,
+          "title": "the screech owl also shall rest there, and find for herself a place of rest.",
+          "folder": "qippoz"
+        }
+      ]
+    },
+    {
       "title": "No Sound Is Too Trivial To Ignore",
       "date": "2023-11-22",
       "folder" : "no-sound",
@@ -320,7 +440,7 @@
         {
           "number": 1,
           "title": "Axolotlatl",
-          "folder": "another-way",
+          "folder": "idempotence",
           "overtitle": "Part 1: Grid To The Remove"
         },
         {
