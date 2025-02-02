@@ -33,6 +33,26 @@
       ]
     },
     {
+      "title": "kerekrz",
+      "date": "2018-06-29",
+      "folder" : "kerekrz",
+      "subtitle": "Lost control.",
+      "nrTracks": 2,
+      "hidden": true,
+      "tracks": [
+        {
+          "number": 1,
+          "title": "kerekrz",
+          "folder": "kerekrz"
+        },
+        {
+          "number": 2,
+          "title": "00head",
+          "folder": "00head"
+        }
+      ]
+    },
+    {
       "title": "nceput",
       "date": "2018-09-28",
       "folder" : "nceput",
