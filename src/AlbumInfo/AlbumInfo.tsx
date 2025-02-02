@@ -17,7 +17,7 @@ function AlbumInfo({album} : AlbumInfoProps)
                 alt={album?.title}
                 src={
                     `${metadata?.cdnLink}/mp3/${album?.folder}/` +
-                    ( album?.specialBackground? "cover-album-page.webp" : "cover-small.webp")
+                    ( album?.specialCover? "cover-album-page.webp" : "cover-small.webp")
                 } />
             <div data-title-hidden={album?.titleHidden}>
                 {
