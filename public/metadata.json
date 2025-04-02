@@ -483,8 +483,25 @@
           "folder": "finality"
         }
       ]
-
+    },
+    {
+      "title": "somethings gotta give",
+      "date": "2025-04-02",
+      "folder" : "4w3",
+      "subtitle": "https://xkcd.com/6",
+      "hidden": true,
+      "tracks": [
+        {
+          "number": 1,
+          "title": "\"Arkadia Is Dying\" Is Dying / It's Been Said And Done / John Lay Luzern - Panasonic Video",
+          "folder": "arkadia"
+        },
+        {
+          "number": 2,
+          "title": "(It Really Sounds A Lot Like It's Saying) Kiss Me (At One Point There)",
+          "folder": "kiss-me"
+        }
+      ]
     }
-
   ]
 }
