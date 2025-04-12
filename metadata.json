@@ -55,6 +55,7 @@
       "date": "2018-09-28",
       "folder" : "nceput",
       "subtitle": "Citrus × limon.",
+      "sideB": "our-future",
       "tracks": [
         {
           "number": 1,
@@ -114,6 +115,7 @@
       "date": "2019-05-18",
       "folder" : "voies-sporen",
       "subtitle": "The artificial is more authentic than the real could ever be.",
+      "sideB": "kerekrz",
       "specialBackground": true,
       "noBorderOnCover": true,
       "tracks": [
@@ -174,6 +176,7 @@
       "date": "2020-04-25",
       "folder" : "antiphony",
       "subtitle": "it's not the time for symphonies.",
+      "sideB": "prophony",
       "tracks": [
         {
           "number": 1,
@@ -243,6 +246,7 @@
       "date": "2021-03-19",
       "folder" : "wen-kintry",
       "subtitle": "Where are the two lost voices, now the night is about to pass.",
+      "sideB": "inf",
       "tracks": [
         {
           "number": 1,
@@ -385,6 +389,7 @@
       "date": "2022-02-22",
       "folder" : "essentia",
       "subtitle": "Că frumos mai cântă muzica.",
+      "sideB": "fiyfm",
       "tracks": [
         {
           "number": 1,
@@ -443,6 +448,7 @@
       "date": "2023-11-22",
       "folder" : "no-sound",
       "subtitle": "Future breeze.",
+      "sideB": "4w3",
       "specialCover": true,
       "specialBackground": true,
       "hideTitleOnPage": true,
