@@ -27,6 +27,11 @@ function AlbumInfo({album} : AlbumInfoProps)
                 <h3 className={"subtitle"}>{album?.subtitle}</h3>
             </div>
         </Link>
+        {album?.sideB &&
+            <Link to={`/${album?.sideB}`}>
+                <small>alt</small>
+            </Link>
+        }
     </div>
 }
 

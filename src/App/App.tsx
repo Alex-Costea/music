@@ -12,6 +12,7 @@ export interface AlbumMetadata {
     date: string
     folder : string
     subtitle : string
+    sideB? : string
     titleHidden?: boolean
     specialCover?: boolean
     specialBackground? : boolean
