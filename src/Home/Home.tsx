@@ -3,6 +3,7 @@ import {useContext} from "react";
 import {MetadataContext} from "../MetadataContext/MetadataContext.tsx";
 import Artist from "../Artist/Artist.tsx";
 import Player from "../Player/Player.tsx";
+import "./Home.css"
 
 function Home() {
     const metadata = useContext(MetadataContext)
@@ -21,6 +22,8 @@ function Home() {
                 ))}
         </div>
         <Player></Player>
+        <a className="source" target="_blank"
+           href={"https://github.com/Alex-Costea/music"}>source code.</a>
     </>
 }
 
