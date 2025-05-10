@@ -242,7 +242,7 @@
       "titleHidden": true
     },
     {
-      "title": "Wen Kintry",
+      "title": "115 Years Of Wen Kintry",
       "date": "2021-03-19",
       "folder" : "wen-kintry",
       "subtitle": "Where are the two lost voices, now the night is about to pass.",
@@ -256,12 +256,12 @@
         {
           "number": 2,
           "title": "Moonsign",
-          "folder": "moonsign"
+          "folder": "nychthemera"
         },
         {
           "number": 3,
           "title": "Kaymak",
-          "folder": "115-years-of-wen-kintry"
+          "folder": "siku-ndefu"
         },
         {
           "number": 4,
@@ -271,7 +271,7 @@
         {
           "number": 5,
           "title": "Abacaxi",
-          "folder": "abacaxi",
+          "folder": "moni-mekhala",
           "featuring": "Havia Nix"
         },
         {
@@ -282,7 +282,7 @@
         {
           "number": 7,
           "title": "So Long",
-          "folder": "so-long"
+          "folder": "maaliviivaan"
         }
       ]
     },
