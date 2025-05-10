@@ -29,7 +29,7 @@ function AlbumInfo({album} : AlbumInfoProps)
         </Link>
         {album?.sideB &&
             <Link to={`/${album?.sideB}`}>
-                <small data-title-hidden={album?.titleHidden}>alt</small>
+                <small data-title-hidden={album?.titleHidden}>alt.</small>
             </Link>
         }
     </div>
